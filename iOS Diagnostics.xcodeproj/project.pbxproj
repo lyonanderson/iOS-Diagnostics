@@ -1,0 +1,875 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		83F26D38CFF2008B1EFE464B /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0B52BD482BBC471747C4A800 /* libPods.a */; };
+		AD030E861A13D42300AEA400 /* ELLOverallReportModel.m in Sources */ = {isa = PBXBuildFile; fileRef = AD030E851A13D42300AEA400 /* ELLOverallReportModel.m */; };
+		AD030E891A13D58900AEA400 /* ELLOverallReportViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = AD030E881A13D58900AEA400 /* ELLOverallReportViewModel.m */; };
+		AD030E8D1A13FCF900AEA400 /* ELLBatteryChartDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = AD030E8C1A13FCF900AEA400 /* ELLBatteryChartDataSource.m */; };
+		AD1269F21A0FEC0E003A823A /* TestData.PLSQL.gz in Resources */ = {isa = PBXBuildFile; fileRef = AD1269F11A0FEC0E003A823A /* TestData.PLSQL.gz */; };
+		AD1269F51A0FF069003A823A /* ELLProcessTimeBreakdownModel.m in Sources */ = {isa = PBXBuildFile; fileRef = AD1269F41A0FF069003A823A /* ELLProcessTimeBreakdownModel.m */; };
+		AD1269F81A0FF089003A823A /* ELLProcessTimeBreakdownViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = AD1269F71A0FF089003A823A /* ELLProcessTimeBreakdownViewModel.m */; };
+		AD1269FB1A0FF111003A823A /* ELLProcessTime.m in Sources */ = {isa = PBXBuildFile; fileRef = AD1269FA1A0FF111003A823A /* ELLProcessTime.m */; };
+		AD1269FF1A115562003A823A /* ELLNotificationInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = AD1269FE1A115562003A823A /* ELLNotificationInfo.m */; };
+		AD126A021A1156B5003A823A /* ELLNotificationTopicModel.m in Sources */ = {isa = PBXBuildFile; fileRef = AD126A011A1156B5003A823A /* ELLNotificationTopicModel.m */; };
+		AD126A061A11596C003A823A /* ELLNotificationTopicViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = AD126A051A11596C003A823A /* ELLNotificationTopicViewModel.m */; };
+		AD126A0A1A1160C3003A823A /* ELLTotalEnergyForProcess.m in Sources */ = {isa = PBXBuildFile; fileRef = AD126A091A1160C3003A823A /* ELLTotalEnergyForProcess.m */; };
+		AD126A0D1A1161D3003A823A /* ELLTotalEnergyReportModel.m in Sources */ = {isa = PBXBuildFile; fileRef = AD126A0C1A1161D3003A823A /* ELLTotalEnergyReportModel.m */; };
+		AD126A111A11644B003A823A /* ELLTotalEnergyReportViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = AD126A101A11644B003A823A /* ELLTotalEnergyReportViewModel.m */; };
+		AD126A141A116896003A823A /* ELLEnergyBreakdown.m in Sources */ = {isa = PBXBuildFile; fileRef = AD126A131A116896003A823A /* ELLEnergyBreakdown.m */; };
+		AD126A171A116A01003A823A /* ELLEnergyBreakdownReportModel.m in Sources */ = {isa = PBXBuildFile; fileRef = AD126A161A116A01003A823A /* ELLEnergyBreakdownReportModel.m */; };
+		AD126A1A1A116BC5003A823A /* ELLEnergyBreakdownReportViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = AD126A191A116BC5003A823A /* ELLEnergyBreakdownReportViewModel.m */; };
+		AD126A201A121060003A823A /* ELLLocationUsage.m in Sources */ = {isa = PBXBuildFile; fileRef = AD126A1F1A121060003A823A /* ELLLocationUsage.m */; };
+		AD3A84271A0E17EB009C17A6 /* ELLNotificationReportViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = AD3A84261A0E17EB009C17A6 /* ELLNotificationReportViewModel.m */; };
+		AD3A842A1A0E19C8009C17A6 /* ELLPowerReportModel.m in Sources */ = {isa = PBXBuildFile; fileRef = AD3A84291A0E19C8009C17A6 /* ELLPowerReportModel.m */; };
+		AD3A842D1A0E667B009C17A6 /* ELLReportSectionViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = AD3A842C1A0E667B009C17A6 /* ELLReportSectionViewModel.m */; };
+		AD3A84301A0E737A009C17A6 /* ELLReportSectionModel.m in Sources */ = {isa = PBXBuildFile; fileRef = AD3A842F1A0E737A009C17A6 /* ELLReportSectionModel.m */; };
+		AD646E261A0D68BB004B3AC9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = AD646E251A0D68BB004B3AC9 /* main.m */; };
+		AD646E291A0D68BB004B3AC9 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AD646E281A0D68BB004B3AC9 /* AppDelegate.m */; };
+		AD646E2C1A0D68BB004B3AC9 /* ELLMasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AD646E2B1A0D68BB004B3AC9 /* ELLMasterViewController.m */; };
+		AD646E2F1A0D68BB004B3AC9 /* ELLReportSectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AD646E2E1A0D68BB004B3AC9 /* ELLReportSectionViewController.m */; };
+		AD646E321A0D68BB004B3AC9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AD646E301A0D68BB004B3AC9 /* Main.storyboard */; };
+		AD646E341A0D68BB004B3AC9 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AD646E331A0D68BB004B3AC9 /* Images.xcassets */; };
+		AD646E371A0D68BB004B3AC9 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = AD646E351A0D68BB004B3AC9 /* LaunchScreen.xib */; };
+		AD646E431A0D68BB004B3AC9 /* iOS_DiagnosticsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = AD646E421A0D68BB004B3AC9 /* iOS_DiagnosticsTests.m */; };
+		AD646E4E1A0D7062004B3AC9 /* ELLConfigViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AD646E4D1A0D7062004B3AC9 /* ELLConfigViewController.m */; };
+		AD646E531A0D899C004B3AC9 /* ELLPowerLogDownloadService.m in Sources */ = {isa = PBXBuildFile; fileRef = AD646E521A0D899C004B3AC9 /* ELLPowerLogDownloadService.m */; };
+		AD646E581A0D89E7004B3AC9 /* GZIP.m in Sources */ = {isa = PBXBuildFile; fileRef = AD646E571A0D89E7004B3AC9 /* GZIP.m */; };
+		AD646E5A1A0D89FB004B3AC9 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = AD646E591A0D89FB004B3AC9 /* libz.dylib */; };
+		AD646E5E1A0D8B67004B3AC9 /* ELLSqlPowerLogAnalyser.m in Sources */ = {isa = PBXBuildFile; fileRef = AD646E5D1A0D8B67004B3AC9 /* ELLSqlPowerLogAnalyser.m */; };
+		AD646E661A0E1555004B3AC9 /* ELLPowerLogReportViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = AD646E651A0E1555004B3AC9 /* ELLPowerLogReportViewModel.m */; };
+		AD661DEF1A14AD4300A68496 /* ELLNotificationCount.m in Sources */ = {isa = PBXBuildFile; fileRef = AD661DEC1A14AD4300A68496 /* ELLNotificationCount.m */; };
+		AD661DF01A14AD4300A68496 /* ELLNotificationReportModel.m in Sources */ = {isa = PBXBuildFile; fileRef = AD661DEE1A14AD4300A68496 /* ELLNotificationReportModel.m */; };
+		AD90322D1A0EC79D00DBE128 /* ELLLocationCount.m in Sources */ = {isa = PBXBuildFile; fileRef = AD90322C1A0EC79D00DBE128 /* ELLLocationCount.m */; };
+		AD9032301A0EC8CC00DBE128 /* ELLLocationReportModel.m in Sources */ = {isa = PBXBuildFile; fileRef = AD90322F1A0EC8CC00DBE128 /* ELLLocationReportModel.m */; };
+		AD9032331A0ECB8B00DBE128 /* ELLLocationReportViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = AD9032321A0ECB8B00DBE128 /* ELLLocationReportViewModel.m */; };
+		ADAB262F1A1215C40000D20B /* ELLLocationUsageReport.m in Sources */ = {isa = PBXBuildFile; fileRef = ADAB262E1A1215C40000D20B /* ELLLocationUsageReport.m */; };
+		ADAB26321A12178A0000D20B /* ELLLocationUsageReportViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = ADAB26311A12178A0000D20B /* ELLLocationUsageReportViewModel.m */; };
+		ADAB263A1A121C970000D20B /* ELLSignalBreakdownModel.m in Sources */ = {isa = PBXBuildFile; fileRef = ADAB26391A121C970000D20B /* ELLSignalBreakdownModel.m */; };
+		ADAB263D1A121EFA0000D20B /* ELLSignalBreakdownViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = ADAB263C1A121EFA0000D20B /* ELLSignalBreakdownViewModel.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		AD646E3D1A0D68BB004B3AC9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AD646E181A0D68BB004B3AC9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AD646E1F1A0D68BB004B3AC9;
+			remoteInfo = "iOS Diagnostics";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0B52BD482BBC471747C4A800 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		0EF701B36699FB5B8796459E /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		AD030E841A13D42300AEA400 /* ELLOverallReportModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ELLOverallReportModel.h; sourceTree = "<group>"; };
+		AD030E851A13D42300AEA400 /* ELLOverallReportModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ELLOverallReportModel.m; sourceTree = "<group>"; };
+		AD030E871A13D58900AEA400 /* ELLOverallReportViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ELLOverallReportViewModel.h; sourceTree = "<group>"; };
+		AD030E881A13D58900AEA400 /* ELLOverallReportViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ELLOverallReportViewModel.m; sourceTree = "<group>"; };
+		AD030E8B1A13FCF900AEA400 /* ELLBatteryChartDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ELLBatteryChartDataSource.h; sourceTree = "<group>"; };
+		AD030E8C1A13FCF900AEA400 /* ELLBatteryChartDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ELLBatteryChartDataSource.m; sourceTree = "<group>"; };
+		AD030E8E1A14041B00AEA400 /* ELLReportSectionViewModel+Internal.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ELLReportSectionViewModel+Internal.h"; sourceTree = "<group>"; };
+		AD1269F11A0FEC0E003A823A /* TestData.PLSQL.gz */ = {isa = PBXFileReference; lastKnownFileType = archive.gzip; path = TestData.PLSQL.gz; sourceTree = "<group>"; };
+		AD1269F31A0FF069003A823A /* ELLProcessTimeBreakdownModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ELLProcessTimeBreakdownModel.h; sourceTree = "<group>"; };
+		AD1269F41A0FF069003A823A /* ELLProcessTimeBreakdownModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ELLProcessTimeBreakdownModel.m; sourceTree = "<group>"; };
+		AD1269F61A0FF089003A823A /* ELLProcessTimeBreakdownViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ELLProcessTimeBreakdownViewModel.h; sourceTree = "<group>"; };
+		AD1269F71A0FF089003A823A /* ELLProcessTimeBreakdownViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ELLProcessTimeBreakdownViewModel.m; sourceTree = "<group>"; };
+		AD1269F91A0FF111003A823A /* ELLProcessTime.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ELLProcessTime.h; sourceTree = "<group>"; };
+		AD1269FA1A0FF111003A823A /* ELLProcessTime.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ELLProcessTime.m; sourceTree = "<group>"; };
+		AD1269FD1A115562003A823A /* ELLNotificationInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ELLNotificationInfo.h; sourceTree = "<group>"; };
+		AD1269FE1A115562003A823A /* ELLNotificationInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ELLNotificationInfo.m; sourceTree = "<group>"; };
+		AD126A001A1156B5003A823A /* ELLNotificationTopicModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ELLNotificationTopicModel.h; sourceTree = "<group>"; };
+		AD126A011A1156B5003A823A /* ELLNotificationTopicModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ELLNotificationTopicModel.m; sourceTree = "<group>"; };
+		AD126A041A11596C003A823A /* ELLNotificationTopicViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ELLNotificationTopicViewModel.h; sourceTree = "<group>"; };
+		AD126A051A11596C003A823A /* ELLNotificationTopicViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ELLNotificationTopicViewModel.m; sourceTree = "<group>"; };
+		AD126A081A1160C3003A823A /* ELLTotalEnergyForProcess.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ELLTotalEnergyForProcess.h; sourceTree = "<group>"; };
+		AD126A091A1160C3003A823A /* ELLTotalEnergyForProcess.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ELLTotalEnergyForProcess.m; sourceTree = "<group>"; };
+		AD126A0B1A1161D3003A823A /* ELLTotalEnergyReportModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ELLTotalEnergyReportModel.h; sourceTree = "<group>"; };
+		AD126A0C1A1161D3003A823A /* ELLTotalEnergyReportModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ELLTotalEnergyReportModel.m; sourceTree = "<group>"; };
+		AD126A0F1A11644B003A823A /* ELLTotalEnergyReportViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ELLTotalEnergyReportViewModel.h; sourceTree = "<group>"; };
+		AD126A101A11644B003A823A /* ELLTotalEnergyReportViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ELLTotalEnergyReportViewModel.m; sourceTree = "<group>"; };
+		AD126A121A116896003A823A /* ELLEnergyBreakdown.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ELLEnergyBreakdown.h; sourceTree = "<group>"; };
+		AD126A131A116896003A823A /* ELLEnergyBreakdown.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ELLEnergyBreakdown.m; sourceTree = "<group>"; };
+		AD126A151A116A01003A823A /* ELLEnergyBreakdownReportModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ELLEnergyBreakdownReportModel.h; sourceTree = "<group>"; };
+		AD126A161A116A01003A823A /* ELLEnergyBreakdownReportModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ELLEnergyBreakdownReportModel.m; sourceTree = "<group>"; };
+		AD126A181A116BC5003A823A /* ELLEnergyBreakdownReportViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ELLEnergyBreakdownReportViewModel.h; sourceTree = "<group>"; };
+		AD126A191A116BC5003A823A /* ELLEnergyBreakdownReportViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ELLEnergyBreakdownReportViewModel.m; sourceTree = "<group>"; };
+		AD126A1E1A121060003A823A /* ELLLocationUsage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ELLLocationUsage.h; sourceTree = "<group>"; };
+		AD126A1F1A121060003A823A /* ELLLocationUsage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ELLLocationUsage.m; sourceTree = "<group>"; };
+		AD3A84251A0E17EB009C17A6 /* ELLNotificationReportViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ELLNotificationReportViewModel.h; sourceTree = "<group>"; };
+		AD3A84261A0E17EB009C17A6 /* ELLNotificationReportViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ELLNotificationReportViewModel.m; sourceTree = "<group>"; };
+		AD3A84281A0E19C8009C17A6 /* ELLPowerReportModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ELLPowerReportModel.h; sourceTree = "<group>"; };
+		AD3A84291A0E19C8009C17A6 /* ELLPowerReportModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ELLPowerReportModel.m; sourceTree = "<group>"; };
+		AD3A842B1A0E667B009C17A6 /* ELLReportSectionViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ELLReportSectionViewModel.h; sourceTree = "<group>"; };
+		AD3A842C1A0E667B009C17A6 /* ELLReportSectionViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ELLReportSectionViewModel.m; sourceTree = "<group>"; };
+		AD3A842E1A0E737A009C17A6 /* ELLReportSectionModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ELLReportSectionModel.h; sourceTree = "<group>"; };
+		AD3A842F1A0E737A009C17A6 /* ELLReportSectionModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ELLReportSectionModel.m; sourceTree = "<group>"; };
+		AD3A84341A0E7DC0009C17A6 /* ELLReportSectionModel+Internal.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ELLReportSectionModel+Internal.h"; sourceTree = "<group>"; };
+		AD646E201A0D68BB004B3AC9 /* iOS Diagnostics.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "iOS Diagnostics.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		AD646E241A0D68BB004B3AC9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AD646E251A0D68BB004B3AC9 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		AD646E271A0D68BB004B3AC9 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		AD646E281A0D68BB004B3AC9 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		AD646E2A1A0D68BB004B3AC9 /* ELLMasterViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ELLMasterViewController.h; sourceTree = "<group>"; };
+		AD646E2B1A0D68BB004B3AC9 /* ELLMasterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ELLMasterViewController.m; sourceTree = "<group>"; };
+		AD646E2D1A0D68BB004B3AC9 /* ELLReportSectionViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ELLReportSectionViewController.h; sourceTree = "<group>"; };
+		AD646E2E1A0D68BB004B3AC9 /* ELLReportSectionViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ELLReportSectionViewController.m; sourceTree = "<group>"; };
+		AD646E311A0D68BB004B3AC9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		AD646E331A0D68BB004B3AC9 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		AD646E361A0D68BB004B3AC9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		AD646E3C1A0D68BB004B3AC9 /* iOS DiagnosticsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "iOS DiagnosticsTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		AD646E411A0D68BB004B3AC9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AD646E421A0D68BB004B3AC9 /* iOS_DiagnosticsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = iOS_DiagnosticsTests.m; sourceTree = "<group>"; };
+		AD646E4C1A0D7062004B3AC9 /* ELLConfigViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ELLConfigViewController.h; sourceTree = "<group>"; };
+		AD646E4D1A0D7062004B3AC9 /* ELLConfigViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ELLConfigViewController.m; sourceTree = "<group>"; };
+		AD646E511A0D899C004B3AC9 /* ELLPowerLogDownloadService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ELLPowerLogDownloadService.h; sourceTree = "<group>"; };
+		AD646E521A0D899C004B3AC9 /* ELLPowerLogDownloadService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ELLPowerLogDownloadService.m; sourceTree = "<group>"; };
+		AD646E541A0D89CB004B3AC9 /* ELLMBSDevice.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ELLMBSDevice.h; sourceTree = "<group>"; };
+		AD646E561A0D89E7004B3AC9 /* GZIP.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GZIP.h; sourceTree = "<group>"; };
+		AD646E571A0D89E7004B3AC9 /* GZIP.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GZIP.m; sourceTree = "<group>"; };
+		AD646E591A0D89FB004B3AC9 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+		AD646E5C1A0D8B67004B3AC9 /* ELLSqlPowerLogAnalyser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ELLSqlPowerLogAnalyser.h; sourceTree = "<group>"; };
+		AD646E5D1A0D8B67004B3AC9 /* ELLSqlPowerLogAnalyser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ELLSqlPowerLogAnalyser.m; sourceTree = "<group>"; };
+		AD646E641A0E1555004B3AC9 /* ELLPowerLogReportViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ELLPowerLogReportViewModel.h; sourceTree = "<group>"; };
+		AD646E651A0E1555004B3AC9 /* ELLPowerLogReportViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ELLPowerLogReportViewModel.m; sourceTree = "<group>"; };
+		AD661DEB1A14AD4300A68496 /* ELLNotificationCount.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ELLNotificationCount.h; sourceTree = "<group>"; };
+		AD661DEC1A14AD4300A68496 /* ELLNotificationCount.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ELLNotificationCount.m; sourceTree = "<group>"; };
+		AD661DED1A14AD4300A68496 /* ELLNotificationReportModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ELLNotificationReportModel.h; sourceTree = "<group>"; };
+		AD661DEE1A14AD4300A68496 /* ELLNotificationReportModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ELLNotificationReportModel.m; sourceTree = "<group>"; };
+		AD90322B1A0EC79D00DBE128 /* ELLLocationCount.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ELLLocationCount.h; sourceTree = "<group>"; };
+		AD90322C1A0EC79D00DBE128 /* ELLLocationCount.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ELLLocationCount.m; sourceTree = "<group>"; };
+		AD90322E1A0EC8CC00DBE128 /* ELLLocationReportModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ELLLocationReportModel.h; sourceTree = "<group>"; };
+		AD90322F1A0EC8CC00DBE128 /* ELLLocationReportModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ELLLocationReportModel.m; sourceTree = "<group>"; };
+		AD9032311A0ECB8B00DBE128 /* ELLLocationReportViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ELLLocationReportViewModel.h; sourceTree = "<group>"; };
+		AD9032321A0ECB8B00DBE128 /* ELLLocationReportViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ELLLocationReportViewModel.m; sourceTree = "<group>"; };
+		ADAB262D1A1215C40000D20B /* ELLLocationUsageReport.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ELLLocationUsageReport.h; sourceTree = "<group>"; };
+		ADAB262E1A1215C40000D20B /* ELLLocationUsageReport.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ELLLocationUsageReport.m; sourceTree = "<group>"; };
+		ADAB26301A12178A0000D20B /* ELLLocationUsageReportViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ELLLocationUsageReportViewModel.h; sourceTree = "<group>"; };
+		ADAB26311A12178A0000D20B /* ELLLocationUsageReportViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ELLLocationUsageReportViewModel.m; sourceTree = "<group>"; };
+		ADAB26381A121C970000D20B /* ELLSignalBreakdownModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ELLSignalBreakdownModel.h; sourceTree = "<group>"; };
+		ADAB26391A121C970000D20B /* ELLSignalBreakdownModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ELLSignalBreakdownModel.m; sourceTree = "<group>"; };
+		ADAB263B1A121EFA0000D20B /* ELLSignalBreakdownViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ELLSignalBreakdownViewModel.h; sourceTree = "<group>"; };
+		ADAB263C1A121EFA0000D20B /* ELLSignalBreakdownViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ELLSignalBreakdownViewModel.m; sourceTree = "<group>"; };
+		C2292BD9D930A330CB19C2B0 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		AD646E1D1A0D68BB004B3AC9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AD646E5A1A0D89FB004B3AC9 /* libz.dylib in Frameworks */,
+				83F26D38CFF2008B1EFE464B /* libPods.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AD646E391A0D68BB004B3AC9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5176E0DA24C311E7DBFAC213 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AD646E591A0D89FB004B3AC9 /* libz.dylib */,
+				0B52BD482BBC471747C4A800 /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		AA143FA8E9069A6DC110CFA1 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0EF701B36699FB5B8796459E /* Pods.debug.xcconfig */,
+				C2292BD9D930A330CB19C2B0 /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		AD030E821A13D36800AEA400 /* Overall */ = {
+			isa = PBXGroup;
+			children = (
+				AD030E841A13D42300AEA400 /* ELLOverallReportModel.h */,
+				AD030E851A13D42300AEA400 /* ELLOverallReportModel.m */,
+			);
+			path = Overall;
+			sourceTree = "<group>";
+		};
+		AD030E831A13D3BB00AEA400 /* Overall */ = {
+			isa = PBXGroup;
+			children = (
+				AD030E871A13D58900AEA400 /* ELLOverallReportViewModel.h */,
+				AD030E881A13D58900AEA400 /* ELLOverallReportViewModel.m */,
+				AD030E8B1A13FCF900AEA400 /* ELLBatteryChartDataSource.h */,
+				AD030E8C1A13FCF900AEA400 /* ELLBatteryChartDataSource.m */,
+			);
+			path = Overall;
+			sourceTree = "<group>";
+		};
+		AD1269EE1A0FE95D003A823A /* Test Data */ = {
+			isa = PBXGroup;
+			children = (
+				AD1269F11A0FEC0E003A823A /* TestData.PLSQL.gz */,
+			);
+			path = "Test Data";
+			sourceTree = "<group>";
+		};
+		AD1269FC1A115535003A823A /* Notifications */ = {
+			isa = PBXGroup;
+			children = (
+				AD661DEB1A14AD4300A68496 /* ELLNotificationCount.h */,
+				AD661DEC1A14AD4300A68496 /* ELLNotificationCount.m */,
+				AD661DED1A14AD4300A68496 /* ELLNotificationReportModel.h */,
+				AD661DEE1A14AD4300A68496 /* ELLNotificationReportModel.m */,
+				AD1269FD1A115562003A823A /* ELLNotificationInfo.h */,
+				AD1269FE1A115562003A823A /* ELLNotificationInfo.m */,
+				AD126A001A1156B5003A823A /* ELLNotificationTopicModel.h */,
+				AD126A011A1156B5003A823A /* ELLNotificationTopicModel.m */,
+			);
+			path = Notifications;
+			sourceTree = "<group>";
+		};
+		AD126A031A11588C003A823A /* Notifications */ = {
+			isa = PBXGroup;
+			children = (
+				AD3A84251A0E17EB009C17A6 /* ELLNotificationReportViewModel.h */,
+				AD3A84261A0E17EB009C17A6 /* ELLNotificationReportViewModel.m */,
+				AD126A041A11596C003A823A /* ELLNotificationTopicViewModel.h */,
+				AD126A051A11596C003A823A /* ELLNotificationTopicViewModel.m */,
+			);
+			path = Notifications;
+			sourceTree = "<group>";
+		};
+		AD126A071A116067003A823A /* Energy */ = {
+			isa = PBXGroup;
+			children = (
+				AD126A081A1160C3003A823A /* ELLTotalEnergyForProcess.h */,
+				AD126A091A1160C3003A823A /* ELLTotalEnergyForProcess.m */,
+				AD126A0B1A1161D3003A823A /* ELLTotalEnergyReportModel.h */,
+				AD126A0C1A1161D3003A823A /* ELLTotalEnergyReportModel.m */,
+				AD126A121A116896003A823A /* ELLEnergyBreakdown.h */,
+				AD126A131A116896003A823A /* ELLEnergyBreakdown.m */,
+				AD126A151A116A01003A823A /* ELLEnergyBreakdownReportModel.h */,
+				AD126A161A116A01003A823A /* ELLEnergyBreakdownReportModel.m */,
+			);
+			path = Energy;
+			sourceTree = "<group>";
+		};
+		AD126A0E1A116410003A823A /* Energy */ = {
+			isa = PBXGroup;
+			children = (
+				AD126A0F1A11644B003A823A /* ELLTotalEnergyReportViewModel.h */,
+				AD126A101A11644B003A823A /* ELLTotalEnergyReportViewModel.m */,
+				AD126A181A116BC5003A823A /* ELLEnergyBreakdownReportViewModel.h */,
+				AD126A191A116BC5003A823A /* ELLEnergyBreakdownReportViewModel.m */,
+			);
+			path = Energy;
+			sourceTree = "<group>";
+		};
+		AD126A1B1A116EFC003A823A /* Location */ = {
+			isa = PBXGroup;
+			children = (
+				AD9032311A0ECB8B00DBE128 /* ELLLocationReportViewModel.h */,
+				AD9032321A0ECB8B00DBE128 /* ELLLocationReportViewModel.m */,
+				ADAB26301A12178A0000D20B /* ELLLocationUsageReportViewModel.h */,
+				ADAB26311A12178A0000D20B /* ELLLocationUsageReportViewModel.m */,
+			);
+			path = Location;
+			sourceTree = "<group>";
+		};
+		AD126A1D1A116F7E003A823A /* Location */ = {
+			isa = PBXGroup;
+			children = (
+				AD90322B1A0EC79D00DBE128 /* ELLLocationCount.h */,
+				AD90322C1A0EC79D00DBE128 /* ELLLocationCount.m */,
+				AD90322E1A0EC8CC00DBE128 /* ELLLocationReportModel.h */,
+				AD90322F1A0EC8CC00DBE128 /* ELLLocationReportModel.m */,
+				AD126A1E1A121060003A823A /* ELLLocationUsage.h */,
+				AD126A1F1A121060003A823A /* ELLLocationUsage.m */,
+				ADAB262D1A1215C40000D20B /* ELLLocationUsageReport.h */,
+				ADAB262E1A1215C40000D20B /* ELLLocationUsageReport.m */,
+			);
+			path = Location;
+			sourceTree = "<group>";
+		};
+		AD646E171A0D68BB004B3AC9 = {
+			isa = PBXGroup;
+			children = (
+				AD646E221A0D68BB004B3AC9 /* iOS Diagnostics */,
+				AD646E3F1A0D68BB004B3AC9 /* iOS DiagnosticsTests */,
+				AD646E211A0D68BB004B3AC9 /* Products */,
+				AA143FA8E9069A6DC110CFA1 /* Pods */,
+				5176E0DA24C311E7DBFAC213 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		AD646E211A0D68BB004B3AC9 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AD646E201A0D68BB004B3AC9 /* iOS Diagnostics.app */,
+				AD646E3C1A0D68BB004B3AC9 /* iOS DiagnosticsTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AD646E221A0D68BB004B3AC9 /* iOS Diagnostics */ = {
+			isa = PBXGroup;
+			children = (
+				AD646E5F1A0D8B75004B3AC9 /* Models */,
+				AD646E631A0E0CC0004B3AC9 /* View Models */,
+				AD646E5B1A0D8B35004B3AC9 /* Log Analysers */,
+				AD646E551A0D89D2004B3AC9 /* External */,
+				AD646E501A0D895F004B3AC9 /* Services */,
+				AD646E4F1A0D7696004B3AC9 /* View Controllers */,
+				AD646E271A0D68BB004B3AC9 /* AppDelegate.h */,
+				AD646E281A0D68BB004B3AC9 /* AppDelegate.m */,
+				AD646E2A1A0D68BB004B3AC9 /* ELLMasterViewController.h */,
+				AD646E2B1A0D68BB004B3AC9 /* ELLMasterViewController.m */,
+				AD646E2D1A0D68BB004B3AC9 /* ELLReportSectionViewController.h */,
+				AD646E2E1A0D68BB004B3AC9 /* ELLReportSectionViewController.m */,
+				AD646E301A0D68BB004B3AC9 /* Main.storyboard */,
+				AD646E331A0D68BB004B3AC9 /* Images.xcassets */,
+				AD646E351A0D68BB004B3AC9 /* LaunchScreen.xib */,
+				AD1269EE1A0FE95D003A823A /* Test Data */,
+				AD646E231A0D68BB004B3AC9 /* Supporting Files */,
+			);
+			path = "iOS Diagnostics";
+			sourceTree = "<group>";
+		};
+		AD646E231A0D68BB004B3AC9 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				AD646E241A0D68BB004B3AC9 /* Info.plist */,
+				AD646E251A0D68BB004B3AC9 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		AD646E3F1A0D68BB004B3AC9 /* iOS DiagnosticsTests */ = {
+			isa = PBXGroup;
+			children = (
+				AD646E421A0D68BB004B3AC9 /* iOS_DiagnosticsTests.m */,
+				AD646E401A0D68BB004B3AC9 /* Supporting Files */,
+			);
+			path = "iOS DiagnosticsTests";
+			sourceTree = "<group>";
+		};
+		AD646E401A0D68BB004B3AC9 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				AD646E411A0D68BB004B3AC9 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		AD646E4F1A0D7696004B3AC9 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				AD646E4C1A0D7062004B3AC9 /* ELLConfigViewController.h */,
+				AD646E4D1A0D7062004B3AC9 /* ELLConfigViewController.m */,
+			);
+			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		AD646E501A0D895F004B3AC9 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				AD646E511A0D899C004B3AC9 /* ELLPowerLogDownloadService.h */,
+				AD646E521A0D899C004B3AC9 /* ELLPowerLogDownloadService.m */,
+				AD646E541A0D89CB004B3AC9 /* ELLMBSDevice.h */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		AD646E551A0D89D2004B3AC9 /* External */ = {
+			isa = PBXGroup;
+			children = (
+				AD646E561A0D89E7004B3AC9 /* GZIP.h */,
+				AD646E571A0D89E7004B3AC9 /* GZIP.m */,
+			);
+			path = External;
+			sourceTree = "<group>";
+		};
+		AD646E5B1A0D8B35004B3AC9 /* Log Analysers */ = {
+			isa = PBXGroup;
+			children = (
+				AD646E5C1A0D8B67004B3AC9 /* ELLSqlPowerLogAnalyser.h */,
+				AD646E5D1A0D8B67004B3AC9 /* ELLSqlPowerLogAnalyser.m */,
+			);
+			path = "Log Analysers";
+			sourceTree = "<group>";
+		};
+		AD646E5F1A0D8B75004B3AC9 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				AD030E821A13D36800AEA400 /* Overall */,
+				ADAB26331A121B800000D20B /* Signal */,
+				AD126A1D1A116F7E003A823A /* Location */,
+				AD126A071A116067003A823A /* Energy */,
+				AD1269FC1A115535003A823A /* Notifications */,
+				AD3A84341A0E7DC0009C17A6 /* ELLReportSectionModel+Internal.h */,
+				AD3A842E1A0E737A009C17A6 /* ELLReportSectionModel.h */,
+				AD3A842F1A0E737A009C17A6 /* ELLReportSectionModel.m */,
+				AD3A84281A0E19C8009C17A6 /* ELLPowerReportModel.h */,
+				AD3A84291A0E19C8009C17A6 /* ELLPowerReportModel.m */,
+				AD661DEA1A14ACCD00A68496 /* Process Time */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		AD646E631A0E0CC0004B3AC9 /* View Models */ = {
+			isa = PBXGroup;
+			children = (
+				AD030E831A13D3BB00AEA400 /* Overall */,
+				ADAB26341A121B980000D20B /* Signal */,
+				AD126A1B1A116EFC003A823A /* Location */,
+				AD126A0E1A116410003A823A /* Energy */,
+				AD661DF11A14AD6000A68496 /* Process Time */,
+				AD126A031A11588C003A823A /* Notifications */,
+				AD030E8E1A14041B00AEA400 /* ELLReportSectionViewModel+Internal.h */,
+				AD3A842B1A0E667B009C17A6 /* ELLReportSectionViewModel.h */,
+				AD3A842C1A0E667B009C17A6 /* ELLReportSectionViewModel.m */,
+				AD646E641A0E1555004B3AC9 /* ELLPowerLogReportViewModel.h */,
+				AD646E651A0E1555004B3AC9 /* ELLPowerLogReportViewModel.m */,
+			);
+			path = "View Models";
+			sourceTree = "<group>";
+		};
+		AD661DEA1A14ACCD00A68496 /* Process Time */ = {
+			isa = PBXGroup;
+			children = (
+				AD1269F31A0FF069003A823A /* ELLProcessTimeBreakdownModel.h */,
+				AD1269F41A0FF069003A823A /* ELLProcessTimeBreakdownModel.m */,
+				AD1269F91A0FF111003A823A /* ELLProcessTime.h */,
+				AD1269FA1A0FF111003A823A /* ELLProcessTime.m */,
+			);
+			path = "Process Time";
+			sourceTree = "<group>";
+		};
+		AD661DF11A14AD6000A68496 /* Process Time */ = {
+			isa = PBXGroup;
+			children = (
+				AD1269F61A0FF089003A823A /* ELLProcessTimeBreakdownViewModel.h */,
+				AD1269F71A0FF089003A823A /* ELLProcessTimeBreakdownViewModel.m */,
+			);
+			path = "Process Time";
+			sourceTree = "<group>";
+		};
+		ADAB26331A121B800000D20B /* Signal */ = {
+			isa = PBXGroup;
+			children = (
+				ADAB26381A121C970000D20B /* ELLSignalBreakdownModel.h */,
+				ADAB26391A121C970000D20B /* ELLSignalBreakdownModel.m */,
+			);
+			path = Signal;
+			sourceTree = "<group>";
+		};
+		ADAB26341A121B980000D20B /* Signal */ = {
+			isa = PBXGroup;
+			children = (
+				ADAB263B1A121EFA0000D20B /* ELLSignalBreakdownViewModel.h */,
+				ADAB263C1A121EFA0000D20B /* ELLSignalBreakdownViewModel.m */,
+			);
+			path = Signal;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		AD646E1F1A0D68BB004B3AC9 /* iOS Diagnostics */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AD646E461A0D68BB004B3AC9 /* Build configuration list for PBXNativeTarget "iOS Diagnostics" */;
+			buildPhases = (
+				F24DC00562CB4F6E63DD7246 /* Check Pods Manifest.lock */,
+				AD646E1C1A0D68BB004B3AC9 /* Sources */,
+				AD646E1D1A0D68BB004B3AC9 /* Frameworks */,
+				AD646E1E1A0D68BB004B3AC9 /* Resources */,
+				391FA5B41AF1ACF7F4064FBE /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "iOS Diagnostics";
+			productName = "iOS Diagnostics";
+			productReference = AD646E201A0D68BB004B3AC9 /* iOS Diagnostics.app */;
+			productType = "com.apple.product-type.application";
+		};
+		AD646E3B1A0D68BB004B3AC9 /* iOS DiagnosticsTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AD646E491A0D68BB004B3AC9 /* Build configuration list for PBXNativeTarget "iOS DiagnosticsTests" */;
+			buildPhases = (
+				AD646E381A0D68BB004B3AC9 /* Sources */,
+				AD646E391A0D68BB004B3AC9 /* Frameworks */,
+				AD646E3A1A0D68BB004B3AC9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AD646E3E1A0D68BB004B3AC9 /* PBXTargetDependency */,
+			);
+			name = "iOS DiagnosticsTests";
+			productName = "iOS DiagnosticsTests";
+			productReference = AD646E3C1A0D68BB004B3AC9 /* iOS DiagnosticsTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		AD646E181A0D68BB004B3AC9 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0610;
+				ORGANIZATIONNAME = "Electric Labs";
+				TargetAttributes = {
+					AD646E1F1A0D68BB004B3AC9 = {
+						CreatedOnToolsVersion = 6.1;
+						DevelopmentTeam = 3UZ3V9PE8J;
+					};
+					AD646E3B1A0D68BB004B3AC9 = {
+						CreatedOnToolsVersion = 6.1;
+						TestTargetID = AD646E1F1A0D68BB004B3AC9;
+					};
+				};
+			};
+			buildConfigurationList = AD646E1B1A0D68BB004B3AC9 /* Build configuration list for PBXProject "iOS Diagnostics" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = AD646E171A0D68BB004B3AC9;
+			productRefGroup = AD646E211A0D68BB004B3AC9 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				AD646E1F1A0D68BB004B3AC9 /* iOS Diagnostics */,
+				AD646E3B1A0D68BB004B3AC9 /* iOS DiagnosticsTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		AD646E1E1A0D68BB004B3AC9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AD1269F21A0FEC0E003A823A /* TestData.PLSQL.gz in Resources */,
+				AD646E321A0D68BB004B3AC9 /* Main.storyboard in Resources */,
+				AD646E371A0D68BB004B3AC9 /* LaunchScreen.xib in Resources */,
+				AD646E341A0D68BB004B3AC9 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AD646E3A1A0D68BB004B3AC9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		391FA5B41AF1ACF7F4064FBE /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F24DC00562CB4F6E63DD7246 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		AD646E1C1A0D68BB004B3AC9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AD1269FF1A115562003A823A /* ELLNotificationInfo.m in Sources */,
+				AD030E891A13D58900AEA400 /* ELLOverallReportViewModel.m in Sources */,
+				AD646E581A0D89E7004B3AC9 /* GZIP.m in Sources */,
+				AD3A84301A0E737A009C17A6 /* ELLReportSectionModel.m in Sources */,
+				AD126A0A1A1160C3003A823A /* ELLTotalEnergyForProcess.m in Sources */,
+				AD9032301A0EC8CC00DBE128 /* ELLLocationReportModel.m in Sources */,
+				AD646E531A0D899C004B3AC9 /* ELLPowerLogDownloadService.m in Sources */,
+				AD646E291A0D68BB004B3AC9 /* AppDelegate.m in Sources */,
+				AD126A141A116896003A823A /* ELLEnergyBreakdown.m in Sources */,
+				AD3A842A1A0E19C8009C17A6 /* ELLPowerReportModel.m in Sources */,
+				AD646E661A0E1555004B3AC9 /* ELLPowerLogReportViewModel.m in Sources */,
+				AD9032331A0ECB8B00DBE128 /* ELLLocationReportViewModel.m in Sources */,
+				ADAB263A1A121C970000D20B /* ELLSignalBreakdownModel.m in Sources */,
+				AD646E2C1A0D68BB004B3AC9 /* ELLMasterViewController.m in Sources */,
+				AD126A111A11644B003A823A /* ELLTotalEnergyReportViewModel.m in Sources */,
+				ADAB263D1A121EFA0000D20B /* ELLSignalBreakdownViewModel.m in Sources */,
+				AD1269F51A0FF069003A823A /* ELLProcessTimeBreakdownModel.m in Sources */,
+				AD1269FB1A0FF111003A823A /* ELLProcessTime.m in Sources */,
+				AD3A842D1A0E667B009C17A6 /* ELLReportSectionViewModel.m in Sources */,
+				ADAB26321A12178A0000D20B /* ELLLocationUsageReportViewModel.m in Sources */,
+				AD661DF01A14AD4300A68496 /* ELLNotificationReportModel.m in Sources */,
+				AD126A021A1156B5003A823A /* ELLNotificationTopicModel.m in Sources */,
+				AD661DEF1A14AD4300A68496 /* ELLNotificationCount.m in Sources */,
+				AD126A0D1A1161D3003A823A /* ELLTotalEnergyReportModel.m in Sources */,
+				AD646E261A0D68BB004B3AC9 /* main.m in Sources */,
+				AD3A84271A0E17EB009C17A6 /* ELLNotificationReportViewModel.m in Sources */,
+				AD126A061A11596C003A823A /* ELLNotificationTopicViewModel.m in Sources */,
+				AD646E4E1A0D7062004B3AC9 /* ELLConfigViewController.m in Sources */,
+				AD90322D1A0EC79D00DBE128 /* ELLLocationCount.m in Sources */,
+				AD1269F81A0FF089003A823A /* ELLProcessTimeBreakdownViewModel.m in Sources */,
+				AD030E861A13D42300AEA400 /* ELLOverallReportModel.m in Sources */,
+				AD030E8D1A13FCF900AEA400 /* ELLBatteryChartDataSource.m in Sources */,
+				ADAB262F1A1215C40000D20B /* ELLLocationUsageReport.m in Sources */,
+				AD126A1A1A116BC5003A823A /* ELLEnergyBreakdownReportViewModel.m in Sources */,
+				AD126A171A116A01003A823A /* ELLEnergyBreakdownReportModel.m in Sources */,
+				AD646E5E1A0D8B67004B3AC9 /* ELLSqlPowerLogAnalyser.m in Sources */,
+				AD646E2F1A0D68BB004B3AC9 /* ELLReportSectionViewController.m in Sources */,
+				AD126A201A121060003A823A /* ELLLocationUsage.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AD646E381A0D68BB004B3AC9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AD646E431A0D68BB004B3AC9 /* iOS_DiagnosticsTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		AD646E3E1A0D68BB004B3AC9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AD646E1F1A0D68BB004B3AC9 /* iOS Diagnostics */;
+			targetProxy = AD646E3D1A0D68BB004B3AC9 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		AD646E301A0D68BB004B3AC9 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AD646E311A0D68BB004B3AC9 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		AD646E351A0D68BB004B3AC9 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AD646E361A0D68BB004B3AC9 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		AD646E441A0D68BB004B3AC9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		AD646E451A0D68BB004B3AC9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		AD646E471A0D68BB004B3AC9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0EF701B36699FB5B8796459E /* Pods.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				INFOPLIST_FILE = "iOS Diagnostics/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+			};
+			name = Debug;
+		};
+		AD646E481A0D68BB004B3AC9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C2292BD9D930A330CB19C2B0 /* Pods.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				INFOPLIST_FILE = "iOS Diagnostics/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+			};
+			name = Release;
+		};
+		AD646E4A1A0D68BB004B3AC9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "iOS DiagnosticsTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/iOS Diagnostics.app/iOS Diagnostics";
+			};
+			name = Debug;
+		};
+		AD646E4B1A0D68BB004B3AC9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "iOS DiagnosticsTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/iOS Diagnostics.app/iOS Diagnostics";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		AD646E1B1A0D68BB004B3AC9 /* Build configuration list for PBXProject "iOS Diagnostics" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AD646E441A0D68BB004B3AC9 /* Debug */,
+				AD646E451A0D68BB004B3AC9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AD646E461A0D68BB004B3AC9 /* Build configuration list for PBXNativeTarget "iOS Diagnostics" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AD646E471A0D68BB004B3AC9 /* Debug */,
+				AD646E481A0D68BB004B3AC9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AD646E491A0D68BB004B3AC9 /* Build configuration list for PBXNativeTarget "iOS DiagnosticsTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AD646E4A1A0D68BB004B3AC9 /* Debug */,
+				AD646E4B1A0D68BB004B3AC9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = AD646E181A0D68BB004B3AC9 /* Project object */;
+}

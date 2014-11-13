@@ -1,0 +1,20 @@
+PODS:
+  - FMDB (2.4):
+    - FMDB/standard
+  - FMDB/common (2.4)
+  - FMDB/standard (2.4):
+    - FMDB/common
+  - JBChartView (2.8.10)
+  - KVOController (1.0.3)
+
+DEPENDENCIES:
+  - FMDB
+  - JBChartView
+  - KVOController
+
+SPEC CHECKSUMS:
+  FMDB: 0b2fa25e5264ef177973c0cb8c02c711107979aa
+  JBChartView: 50b221ef68d0934f5aea417a369a5b02167848a9
+  KVOController: b1139ef1fc373b6757e4b69493fedd7b56eb1272
+
+COCOAPODS: 0.34.4
