@@ -9,3 +9,8 @@ Please not that the logs sometimes don't import when running the app through the
 
 You can see a video in action [here](http://vimeo.com/111691295)
 
+![Screenshot1](/screenshots/Screenshot1.png?raw=true "Screenshot1")
+
+![Screenshot2](/screenshots/Screenshot2.png?raw=true "Screenshot2")
+
+![Screenshot3](/screenshots/Screenshot3.png?raw=true "Screenshot3")
