@@ -14,6 +14,7 @@
 #import "ELLTotalEnergyForProcess.h"
 #import "ELLEnergyBreakdown.h"
 #import "ELLLocationUsage.h"
+#import "ELLProcessEvent.h"
 #import <FMDB/FMDatabase.h>
 
 
@@ -71,6 +72,56 @@
         });
     });
 }
+
+
+
+
+
+- (void)processNamesFrom:(NSDate *)fromDate toDate:(NSDate *)toDate completion:(void(^)(NSArray *processNames, NSError *error))completion {
+    dispatch_async(self.loadingQueue, ^{
+        FMResultSet *results = [self.logfileDatabase executeQueryWithFormat:@"SELECT EventIdentifier FROM "\
+                                "PLAccountingGroup_EventNone_AccountingGroup "\
+                                "WHERE AGName != 'CoreDuet' AND AGName != 'Assertion' AND timestamp > %f AND timestamp < %f "\
+                                "GROUP BY EventIdentifier "
+                                "ORDER BY EventIdentifier",
+                                fromDate.timeIntervalSince1970, toDate.timeIntervalSince1970];
+        
+        NSMutableArray *processNames = [NSMutableArray array];
+        
+        while ([results next]) {
+            [processNames addObject:[results stringForColumn:@"EventIdentifier"]];
+        }
+        dispatch_async(dispatch_get_main_queue(), ^{
+            completion(processNames, nil);
+        });
+    });
+}
+
+- (void)processInfoFrom:(NSDate *)fromDate toDate:(NSDate *)toDate processName:(NSString *)processName completion:(void(^)(NSArray *processEvents, NSError *error))completion {
+    dispatch_async(self.loadingQueue, ^{
+        FMResultSet *results = [self.logfileDatabase executeQueryWithFormat:
+                                @"SELECT timestamp, AGName, EventStopTime - EventStartTime AS length FROM "\
+                                "PLAccountingGroup_EventNone_AccountingGroup "\
+                                "WHERE  timestamp > %f AND timestamp < %f AND "\
+                                "EventIdentifier = %@ AND AGName != 'CoreDuet' AND AGName != 'Assertion' "\
+                                "ORDER BY timestamp ASC",
+                                fromDate.timeIntervalSince1970, toDate.timeIntervalSince1970, processName];
+        
+        NSMutableArray *processInfo = [NSMutableArray array];
+        
+        while ([results next]) {
+            ELLProcessEvent *processEvent = [ELLProcessEvent processEventWithTimestamp:[NSDate dateWithTimeIntervalSince1970:[results longLongIntForColumn:@"timestamp"]]
+                                                                                  type:[results stringForColumn:@"AGName"]
+                                                                           length:[results doubleForColumn:@"length"]];
+            [processInfo addObject:processEvent];
+        }
+        dispatch_async(dispatch_get_main_queue(), ^{
+            completion(processInfo, nil);
+        });
+    });
+}
+
+
 
 - (void)processTotalEnergyFromDate:(NSDate *)fromDate toDate:(NSDate *)toDate completion:(void(^)(NSArray *totalEnergyPerProcess, NSError *error))completion {
     dispatch_async(self.loadingQueue, ^{

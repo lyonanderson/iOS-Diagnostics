@@ -25,6 +25,11 @@
 		AD126A171A116A01003A823A /* ELLEnergyBreakdownReportModel.m in Sources */ = {isa = PBXBuildFile; fileRef = AD126A161A116A01003A823A /* ELLEnergyBreakdownReportModel.m */; };
 		AD126A1A1A116BC5003A823A /* ELLEnergyBreakdownReportViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = AD126A191A116BC5003A823A /* ELLEnergyBreakdownReportViewModel.m */; };
 		AD126A201A121060003A823A /* ELLLocationUsage.m in Sources */ = {isa = PBXBuildFile; fileRef = AD126A1F1A121060003A823A /* ELLLocationUsage.m */; };
+		AD337B2F1A16BA55009BA85D /* ELLProcessNamesReportModel.m in Sources */ = {isa = PBXBuildFile; fileRef = AD337B2E1A16BA55009BA85D /* ELLProcessNamesReportModel.m */; };
+		AD337B331A16BAF5009BA85D /* ELLProcessNamesReportViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = AD337B321A16BAF5009BA85D /* ELLProcessNamesReportViewModel.m */; };
+		AD337B361A16BE0C009BA85D /* ELLProcessEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = AD337B351A16BE0C009BA85D /* ELLProcessEvent.m */; };
+		AD337B391A16BF0B009BA85D /* ELLProcessEventsReportModel.m in Sources */ = {isa = PBXBuildFile; fileRef = AD337B381A16BF0B009BA85D /* ELLProcessEventsReportModel.m */; };
+		AD337B3C1A16BFFA009BA85D /* ELLProcessEventsReportViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = AD337B3B1A16BFFA009BA85D /* ELLProcessEventsReportViewModel.m */; };
 		AD3A84271A0E17EB009C17A6 /* ELLNotificationReportViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = AD3A84261A0E17EB009C17A6 /* ELLNotificationReportViewModel.m */; };
 		AD3A842A1A0E19C8009C17A6 /* ELLPowerReportModel.m in Sources */ = {isa = PBXBuildFile; fileRef = AD3A84291A0E19C8009C17A6 /* ELLPowerReportModel.m */; };
 		AD3A842D1A0E667B009C17A6 /* ELLReportSectionViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = AD3A842C1A0E667B009C17A6 /* ELLReportSectionViewModel.m */; };
@@ -101,6 +106,16 @@
 		AD126A191A116BC5003A823A /* ELLEnergyBreakdownReportViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ELLEnergyBreakdownReportViewModel.m; sourceTree = "<group>"; };
 		AD126A1E1A121060003A823A /* ELLLocationUsage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ELLLocationUsage.h; sourceTree = "<group>"; };
 		AD126A1F1A121060003A823A /* ELLLocationUsage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ELLLocationUsage.m; sourceTree = "<group>"; };
+		AD337B2D1A16BA55009BA85D /* ELLProcessNamesReportModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ELLProcessNamesReportModel.h; sourceTree = "<group>"; };
+		AD337B2E1A16BA55009BA85D /* ELLProcessNamesReportModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ELLProcessNamesReportModel.m; sourceTree = "<group>"; };
+		AD337B311A16BAF5009BA85D /* ELLProcessNamesReportViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ELLProcessNamesReportViewModel.h; sourceTree = "<group>"; };
+		AD337B321A16BAF5009BA85D /* ELLProcessNamesReportViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ELLProcessNamesReportViewModel.m; sourceTree = "<group>"; };
+		AD337B341A16BE0C009BA85D /* ELLProcessEvent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ELLProcessEvent.h; sourceTree = "<group>"; };
+		AD337B351A16BE0C009BA85D /* ELLProcessEvent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ELLProcessEvent.m; sourceTree = "<group>"; };
+		AD337B371A16BF0B009BA85D /* ELLProcessEventsReportModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ELLProcessEventsReportModel.h; sourceTree = "<group>"; };
+		AD337B381A16BF0B009BA85D /* ELLProcessEventsReportModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ELLProcessEventsReportModel.m; sourceTree = "<group>"; };
+		AD337B3A1A16BFFA009BA85D /* ELLProcessEventsReportViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ELLProcessEventsReportViewModel.h; sourceTree = "<group>"; };
+		AD337B3B1A16BFFA009BA85D /* ELLProcessEventsReportViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ELLProcessEventsReportViewModel.m; sourceTree = "<group>"; };
 		AD3A84251A0E17EB009C17A6 /* ELLNotificationReportViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ELLNotificationReportViewModel.h; sourceTree = "<group>"; };
 		AD3A84261A0E17EB009C17A6 /* ELLNotificationReportViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ELLNotificationReportViewModel.m; sourceTree = "<group>"; };
 		AD3A84281A0E19C8009C17A6 /* ELLPowerReportModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ELLPowerReportModel.h; sourceTree = "<group>"; };
@@ -302,6 +317,30 @@
 			path = Location;
 			sourceTree = "<group>";
 		};
+		AD337B2C1A16B9FD009BA85D /* Process Info */ = {
+			isa = PBXGroup;
+			children = (
+				AD337B2D1A16BA55009BA85D /* ELLProcessNamesReportModel.h */,
+				AD337B2E1A16BA55009BA85D /* ELLProcessNamesReportModel.m */,
+				AD337B341A16BE0C009BA85D /* ELLProcessEvent.h */,
+				AD337B351A16BE0C009BA85D /* ELLProcessEvent.m */,
+				AD337B371A16BF0B009BA85D /* ELLProcessEventsReportModel.h */,
+				AD337B381A16BF0B009BA85D /* ELLProcessEventsReportModel.m */,
+			);
+			path = "Process Info";
+			sourceTree = "<group>";
+		};
+		AD337B301A16BACA009BA85D /* Process Info */ = {
+			isa = PBXGroup;
+			children = (
+				AD337B311A16BAF5009BA85D /* ELLProcessNamesReportViewModel.h */,
+				AD337B321A16BAF5009BA85D /* ELLProcessNamesReportViewModel.m */,
+				AD337B3A1A16BFFA009BA85D /* ELLProcessEventsReportViewModel.h */,
+				AD337B3B1A16BFFA009BA85D /* ELLProcessEventsReportViewModel.m */,
+			);
+			path = "Process Info";
+			sourceTree = "<group>";
+		};
 		AD646E171A0D68BB004B3AC9 = {
 			isa = PBXGroup;
 			children = (
@@ -412,9 +451,11 @@
 		AD646E5F1A0D8B75004B3AC9 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				AD337B2C1A16B9FD009BA85D /* Process Info */,
 				AD030E821A13D36800AEA400 /* Overall */,
 				ADAB26331A121B800000D20B /* Signal */,
 				AD126A1D1A116F7E003A823A /* Location */,
+				AD661DEA1A14ACCD00A68496 /* Process Time */,
 				AD126A071A116067003A823A /* Energy */,
 				AD1269FC1A115535003A823A /* Notifications */,
 				AD3A84341A0E7DC0009C17A6 /* ELLReportSectionModel+Internal.h */,
@@ -422,7 +463,6 @@
 				AD3A842F1A0E737A009C17A6 /* ELLReportSectionModel.m */,
 				AD3A84281A0E19C8009C17A6 /* ELLPowerReportModel.h */,
 				AD3A84291A0E19C8009C17A6 /* ELLPowerReportModel.m */,
-				AD661DEA1A14ACCD00A68496 /* Process Time */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -430,6 +470,7 @@
 		AD646E631A0E0CC0004B3AC9 /* View Models */ = {
 			isa = PBXGroup;
 			children = (
+				AD337B301A16BACA009BA85D /* Process Info */,
 				AD030E831A13D3BB00AEA400 /* Overall */,
 				ADAB26341A121B980000D20B /* Signal */,
 				AD126A1B1A116EFC003A823A /* Location */,
@@ -626,6 +667,7 @@
 				AD646E581A0D89E7004B3AC9 /* GZIP.m in Sources */,
 				AD3A84301A0E737A009C17A6 /* ELLReportSectionModel.m in Sources */,
 				AD126A0A1A1160C3003A823A /* ELLTotalEnergyForProcess.m in Sources */,
+				AD337B331A16BAF5009BA85D /* ELLProcessNamesReportViewModel.m in Sources */,
 				AD9032301A0EC8CC00DBE128 /* ELLLocationReportModel.m in Sources */,
 				AD646E531A0D899C004B3AC9 /* ELLPowerLogDownloadService.m in Sources */,
 				AD646E291A0D68BB004B3AC9 /* AppDelegate.m in Sources */,
@@ -636,9 +678,12 @@
 				ADAB263A1A121C970000D20B /* ELLSignalBreakdownModel.m in Sources */,
 				AD126A111A11644B003A823A /* ELLTotalEnergyReportViewModel.m in Sources */,
 				ADAB263D1A121EFA0000D20B /* ELLSignalBreakdownViewModel.m in Sources */,
+				AD337B3C1A16BFFA009BA85D /* ELLProcessEventsReportViewModel.m in Sources */,
+				AD337B361A16BE0C009BA85D /* ELLProcessEvent.m in Sources */,
 				AD1269F51A0FF069003A823A /* ELLProcessTimeBreakdownModel.m in Sources */,
 				AD1269FB1A0FF111003A823A /* ELLProcessTime.m in Sources */,
 				AD3A842D1A0E667B009C17A6 /* ELLReportSectionViewModel.m in Sources */,
+				AD337B2F1A16BA55009BA85D /* ELLProcessNamesReportModel.m in Sources */,
 				ADAB26321A12178A0000D20B /* ELLLocationUsageReportViewModel.m in Sources */,
 				AD661DF01A14AD4300A68496 /* ELLNotificationReportModel.m in Sources */,
 				AD126A021A1156B5003A823A /* ELLNotificationTopicModel.m in Sources */,
@@ -651,6 +696,7 @@
 				AD90322D1A0EC79D00DBE128 /* ELLLocationCount.m in Sources */,
 				AD1269F81A0FF089003A823A /* ELLProcessTimeBreakdownViewModel.m in Sources */,
 				ADE9AE5C1A14B41C00D71C11 /* ELLReportSectionViewController.m in Sources */,
+				AD337B391A16BF0B009BA85D /* ELLProcessEventsReportModel.m in Sources */,
 				AD030E861A13D42300AEA400 /* ELLOverallReportModel.m in Sources */,
 				AD030E8D1A13FCF900AEA400 /* ELLBatteryChartDataSource.m in Sources */,
 				ADAB262F1A1215C40000D20B /* ELLLocationUsageReport.m in Sources */,

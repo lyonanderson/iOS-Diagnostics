@@ -21,6 +21,8 @@
 #import "ELLSignalBreakdownViewModel.h"
 #import "ELLOverallReportModel.h"
 #import "ELLOverallReportViewModel.h"
+#import "ELLProcessNamesReportModel.h"
+#import "ELLProcessNamesReportViewModel.h"
 
 #import <KVOController/FBKVOController.h>
 
@@ -64,7 +66,7 @@
 }
 
 -(NSInteger)numberOfItemsInSection:(NSInteger)section {
-    return 6;
+    return 7;
 }
 
 -(NSString *)titleForSection:(NSInteger)section {
@@ -91,6 +93,8 @@
         case ELLPowerReportSignal: {
             return @"Signal Bars";
         }
+        case ELLPowerReportProcessInfo:
+            return @"Process Info";
         default:
             return @"";
     }
@@ -148,6 +152,13 @@
                                                                                         startDate:self.constrainedStartDate
                                                                                           endDate:self.constrainedEndDate];
             return [[ELLSignalBreakdownViewModel alloc] initWithModel:model reportTitle:[self titleAtIndexPath:indexPath]];
+        }
+        case ELLPowerReportProcessInfo: {
+            
+            ELLProcessNamesReportModel *model = [[ELLProcessNamesReportModel alloc] initWithLogAnalyser:self.logAnalyser
+                                                                                              startDate:self.constrainedStartDate
+                                                                                                endDate:self.constrainedEndDate];
+            return [[ELLProcessNamesReportViewModel alloc] initWithModel:model reportTitle:[self titleAtIndexPath:indexPath]];
         }
         default:
             return nil;
