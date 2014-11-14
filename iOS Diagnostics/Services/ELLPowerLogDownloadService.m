@@ -10,18 +10,20 @@
 #import "ELLMBSDevice.h"
 #import "GZIP.h"
 
-
+static const NSUInteger kELLMaxNumberOfRetries = 1;
 
 @interface ELLPowerLogDownloadService()
 @property (nonatomic, strong) dispatch_source_t	src;
 @property (nonatomic, strong) NSArray *sqlLogFiles;
 @property (nonatomic, strong) NSArray *compressSqlFiles;
 @property (nonatomic, strong) id mbsDevice;
+@property (nonatomic, assign) NSUInteger retryCount;
 @end
 
 @implementation ELLPowerLogDownloadService
 
 - (void)startPowerLogDownload {
+    self.retryCount = 0;
     dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
         [self _prepareLogDirectory];
         [self _loadPowerLogs];
@@ -87,11 +89,16 @@
             }
         });
     } else {
-        dispatch_async(dispatch_get_main_queue(), ^{
-            if ([self.delegate respondsToSelector:@selector(powerLogDownloadService:didFailWithError:)]) {
-                [self.delegate powerLogDownloadService:self didFailWithError:[NSError errorWithDomain:@"com.electriclabs.iOSDiagnostics" code:500 userInfo:nil]];
-            }
-        });
+        if (self.retryCount++ >= kELLMaxNumberOfRetries) {
+            dispatch_async(dispatch_get_main_queue(), ^{
+                if ([self.delegate respondsToSelector:@selector(powerLogDownloadService:didFailWithError:)]) {
+                    [self.delegate powerLogDownloadService:self didFailWithError:[NSError errorWithDomain:@"com.electriclabs.iOSDiagnostics" code:500 userInfo:nil]];
+                }
+            });
+        } else {
+            [self _loadPowerLogs];
+        }
+        
     }
 #endif
 }
