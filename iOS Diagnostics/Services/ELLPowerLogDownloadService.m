@@ -10,7 +10,9 @@
 #import "ELLMBSDevice.h"
 #import "GZIP.h"
 
+#if !TARGET_IPHONE_SIMULATOR
 static const NSUInteger kELLMaxNumberOfRetries = 1;
+#endif
 
 @interface ELLPowerLogDownloadService()
 @property (nonatomic, strong) dispatch_source_t	src;
