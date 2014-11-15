@@ -39,13 +39,6 @@
     return [self notificationCountForIndexPath:indexPath].connectionType;
 }
 
-- (BOOL)lineChartView:(JBLineChartView *)lineChartView smoothLineAtLineIndex:(NSUInteger)lineIndex {
-    return YES;
-}
-
-- (JBLineChartViewLineStyle)lineChartView:(JBLineChartView *)lineChartView lineStyleForLineAtLineIndex:(NSUInteger)lineIndex {
-    return JBLineChartViewLineStyleSolid;
-}
 
 #pragma mark Util
 
