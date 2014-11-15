@@ -26,11 +26,6 @@
     return self;
 }
 
--(NSInteger)numberOfItemsInSection:(NSInteger)section {
-    ELLProcessTimeBreakdownModel *processTimeReport = (ELLProcessTimeBreakdownModel *)self.model;
-    return processTimeReport.processTimes.count;
-}
-
 -(NSString *)titleAtIndexPath:(NSIndexPath *)indexPath {
     ELLProcessTime *processTime = [self processTimeForIndexPath:indexPath];
     return processTime.processName;
@@ -43,8 +38,7 @@
 #pragma mark Util
 
 - (ELLProcessTime *)processTimeForIndexPath:(NSIndexPath *)indexPath {
-    ELLProcessTimeBreakdownModel *processTimeReport = (ELLProcessTimeBreakdownModel *)self.model;
-    return processTimeReport.processTimes[indexPath.row];
+    return self.results[indexPath.row];
 }
 
 

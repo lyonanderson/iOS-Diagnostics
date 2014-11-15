@@ -11,6 +11,4 @@
 
 @interface ELLNotificationReportModel : ELLReportSectionModel
 
-@property (nonatomic, readonly, strong) NSArray *notificationCountsForTopics;
-
 @end

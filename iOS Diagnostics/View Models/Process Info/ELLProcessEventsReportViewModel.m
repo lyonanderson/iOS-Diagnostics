@@ -33,11 +33,6 @@
 }
 
 
--(NSInteger)numberOfItemsInSection:(NSInteger)section {
-    ELLProcessEventsReportModel *processEventsModel = (ELLProcessEventsReportModel *)self.model;
-    return processEventsModel.processEvents.count;
-}
-
 -(NSString *)titleAtIndexPath:(NSIndexPath *)indexPath {
     ELLProcessEvent *processEvent = [self processEventForIndexPath:indexPath];
     return  [_dateFormatter stringFromDate:processEvent.timestamp];
@@ -51,7 +46,7 @@
 
 - (ELLProcessEvent *)processEventForIndexPath:(NSIndexPath *)indexPath {
     ELLProcessEventsReportModel *processEventsModel = (ELLProcessEventsReportModel *)self.model;
-    return processEventsModel.processEvents[indexPath.row];
+    return processEventsModel.results[indexPath.row];
 }
 
 @end

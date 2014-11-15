@@ -15,12 +15,6 @@
 
 @implementation ELLNotificationReportViewModel
 
-
--(NSInteger)numberOfItemsInSection:(NSInteger)section {
-    ELLNotificationReportModel *notificationModel = (ELLNotificationReportModel *)self.model;
-    return notificationModel.notificationCountsForTopics.count;
-}
-
 -(NSString *)titleAtIndexPath:(NSIndexPath *)indexPath {
     return [self notificationCountForIndexPath:indexPath].topic;
 }
@@ -49,8 +43,7 @@
 #pragma mark Util
 
 - (ELLNotificationCount *)notificationCountForIndexPath:(NSIndexPath *)indexPath {
-    ELLNotificationReportModel *notificationModel = (ELLNotificationReportModel *)self.model;
-    return notificationModel.notificationCountsForTopics[indexPath.row];
+    return self.results[indexPath.row];
 }
 
 @end

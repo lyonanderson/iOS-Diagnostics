@@ -26,10 +26,6 @@
     return self;
 }
 
--(NSInteger)numberOfItemsInSection:(NSInteger)section {
-    ELLNotificationTopicModel *notificationModel = (ELLNotificationTopicModel *)self.model;
-    return notificationModel.notificationTopicInfo.count;
-}
 
 -(NSString *)titleAtIndexPath:(NSIndexPath *)indexPath {
     return [self.dateFormatter stringFromDate:[self notificationCountForIndexPath:indexPath].timestamp];
@@ -43,8 +39,7 @@
 #pragma mark Util
 
 - (ELLNotificationInfo *)notificationCountForIndexPath:(NSIndexPath *)indexPath {
-    ELLNotificationTopicModel *notificationModel = (ELLNotificationTopicModel *)self.model;
-    return notificationModel.notificationTopicInfo[indexPath.row];
+    return self.results[indexPath.row];
 }
 
 

@@ -12,14 +12,13 @@
 
 
 @interface ELLProcessTimeBreakdownModel ()
-@property (nonatomic, readwrite, strong) NSArray *processTimes;
 @end
 
 @implementation ELLProcessTimeBreakdownModel
 
 - (void)load {
     [self.logAnalyser processProcessTimeBreakdownFrom:self.startDate toDate:self.endDate completion:^(NSArray *processTimeBreakdown, NSError *error) {
-        self.processTimes = processTimeBreakdown;
+        self.results = processTimeBreakdown;
         self.readyToReport = YES;
     }];
 }

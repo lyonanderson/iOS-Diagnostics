@@ -10,8 +10,6 @@
 
 @interface ELLEnergyBreakdownReportModel : ELLReportSectionModel
 
-@property (nonatomic, readonly, strong) NSArray *breakdownForProcess;
-
 - (instancetype)initWithLogAnalyser:(ELLSqlPowerLogAnalyser *)logAnalyser startDate:(NSDate *)startDate endDate:(NSDate *)endDate processName:(NSString *)processName;
 
 @end

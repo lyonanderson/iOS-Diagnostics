@@ -56,7 +56,7 @@
 }
 
 -(NSInteger)numberOfItemsInSection:(NSInteger)section {
-    return 0;
+    return self.results.count;
 }
 
 -(NSString *)titleAtIndexPath:(NSIndexPath *)indexPath {
@@ -73,6 +73,15 @@
 
 - (ELLReportSectionViewModel *)viewModelForDetailAtIndexPath:(NSIndexPath *)indexPath {
     return nil;
+}
+
+
+- (NSArray *)results {
+    if (self.isFilteringResults) {
+        return self.model.filteredResults;
+    } else {
+        return self.model.results;
+    }
 }
 
 - (BOOL)canFilterResults {

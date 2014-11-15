@@ -11,7 +11,6 @@
 #import "ELLSqlPowerLogAnalyser.h"
 
 @interface ELLLocationUsageReport ()
-@property (nonatomic, readwrite, strong) NSArray *locationUsesForBundle;
 @property (nonatomic, readwrite, strong) NSString *bundle;
 @end
 
@@ -26,7 +25,7 @@
 
 - (void)load {
     [self.logAnalyser processLocationUsesFrom:self.startDate toDate:self.endDate forBundle:self.bundle completion:^(NSArray *locationUses, NSError *error) {
-        self.locationUsesForBundle = locationUses;
+        self.results = locationUses;
         self.readyToReport = YES;
     }];
 }

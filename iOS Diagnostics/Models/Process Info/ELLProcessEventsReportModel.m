@@ -12,7 +12,6 @@
 
 @interface ELLProcessEventsReportModel ()
 @property (nonatomic, readwrite, copy) NSString *processName;
-@property (nonatomic, readwrite, strong) NSArray *processEvents;
 @end
 
 @implementation ELLProcessEventsReportModel
@@ -26,7 +25,7 @@
 
 - (void)load {
     [self.logAnalyser processInfoFrom:self.startDate toDate:self.endDate processName:self.processName completion:^(NSArray *processEvents, NSError *error) {
-        self.processEvents = processEvents;
+        self.results = processEvents;
         self.readyToReport = YES;
     }];
 }

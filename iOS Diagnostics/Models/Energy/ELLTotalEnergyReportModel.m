@@ -11,7 +11,6 @@
 #import "ELLSqlPowerLogAnalyser.h"
 
 @interface ELLTotalEnergyReportModel ()
-@property (nonatomic, readwrite, strong) NSArray *totalEnergyPerProcess;
 @end
 
 @implementation ELLTotalEnergyReportModel
@@ -20,7 +19,7 @@
 - (void)load {
     [self.logAnalyser processTotalEnergyFromDate:self.startDate toDate:self.endDate completion:^(NSArray *totalEnergyPerProcess, NSError *error) {
         if (!error) {
-            self.totalEnergyPerProcess = totalEnergyPerProcess;
+            self.results = totalEnergyPerProcess;
             self.readyToReport = YES;
         }
     }];

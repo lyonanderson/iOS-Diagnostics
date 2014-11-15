@@ -14,10 +14,6 @@
 
 @implementation ELLLocationReportViewModel
 
--(NSInteger)numberOfItemsInSection:(NSInteger)section {
-    ELLLocationReportModel *locationReportModel = (ELLLocationReportModel *)self.model;
-    return locationReportModel.locationClientUses.count;
-}
 
 -(NSString *)titleAtIndexPath:(NSIndexPath *)indexPath {
     ELLLocationCount *locationCount = [self locationCountForIndexPath:indexPath];
@@ -45,12 +41,15 @@
     return YES;
 }
 
+- (BOOL)canFilterResults {
+    return YES;
+}
+
 
 #pragma mark Util
 
 - (ELLLocationCount *)locationCountForIndexPath:(NSIndexPath *)indexPath {
-    ELLLocationReportModel *locationModel = (ELLLocationReportModel *)self.model;
-    return locationModel.locationClientUses[indexPath.row];
+    return self.results[indexPath.row];
 }
 
 @end

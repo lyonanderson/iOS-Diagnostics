@@ -10,8 +10,6 @@
 
 @interface ELLNotificationTopicModel : ELLReportSectionModel
 
-@property (nonatomic, readonly, strong) NSArray *notificationTopicInfo;
-
 - (instancetype)initWithLogAnalyser:(ELLSqlPowerLogAnalyser *)logAnalyser startDate:(NSDate *)startDate endDate:(NSDate *)endDate topic:(NSString *)topic;
 
 @end

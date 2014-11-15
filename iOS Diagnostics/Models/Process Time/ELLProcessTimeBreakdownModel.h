@@ -10,6 +10,4 @@
 
 @interface ELLProcessTimeBreakdownModel : ELLReportSectionModel
 
-@property (nonatomic, readonly, strong) NSArray *processTimes;
-
 @end

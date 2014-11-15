@@ -10,8 +10,6 @@
 
 @interface ELLProcessEventsReportModel : ELLReportSectionModel
 
-@property (nonatomic, readonly, strong) NSArray *processEvents;
-
 - (instancetype)initWithLogAnalyser:(ELLSqlPowerLogAnalyser *)logAnalyser startDate:(NSDate *)startDate endDate:(NSDate *)endDate processName:(NSString *)processName;
 
 @end

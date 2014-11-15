@@ -11,14 +11,13 @@
 #import "ELLSqlPowerLogAnalyser.h"
 
 @interface ELLSignalBreakdownModel ()
-@property (nonatomic, readwrite, strong) NSArray *signalBarToPercentage;
 @end
 
 @implementation ELLSignalBreakdownModel
 
 - (void)load {
     [self.logAnalyser processSignalBarsFrom:self.startDate toDate:self.endDate completion:^(NSArray *signalBreakdown, NSError *error) {
-        self.signalBarToPercentage = signalBreakdown;
+        self.results = signalBreakdown;
         self.readyToReport = YES;
     }];
 }

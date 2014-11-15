@@ -12,18 +12,13 @@
 @implementation ELLSignalBreakdownViewModel
 
 
--(NSInteger)numberOfItemsInSection:(NSInteger)section {
-    ELLSignalBreakdownModel *energyBreakdown = (ELLSignalBreakdownModel *)self.model;
-    return energyBreakdown.signalBarToPercentage.count;
-}
 
 -(NSString *)titleAtIndexPath:(NSIndexPath *)indexPath {
     return [NSString stringWithFormat:@"%ld", (long)indexPath.row];
 }
 
 -(NSString *)detailAtIndexPath:(NSIndexPath *)indexPath {
-    ELLSignalBreakdownModel *energyBreakdown = (ELLSignalBreakdownModel *)self.model;
-    return [NSString stringWithFormat:@"%ld%%", (long)[energyBreakdown.signalBarToPercentage[indexPath.row] integerValue]];
+    return [NSString stringWithFormat:@"%ld%%", (long)[self.results[indexPath.row] integerValue]];
 }
 
 @end

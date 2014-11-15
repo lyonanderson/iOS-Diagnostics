@@ -10,6 +10,4 @@
 
 @interface ELLSignalBreakdownModel : ELLReportSectionModel
 
-@property (nonatomic, readonly, strong) NSArray *signalBarToPercentage;
-
 @end

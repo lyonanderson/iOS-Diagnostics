@@ -16,6 +16,8 @@
 @property (nonatomic, readonly, strong) NSDate *startDate;
 @property (nonatomic, readonly, strong) NSDate *endDate;
 @property (nonatomic, readonly, assign) BOOL readyToReport;
+@property (nonatomic, readonly, strong) NSArray *results;
+@property (nonatomic, readonly, strong) NSArray *filteredResults;
 
 - (instancetype)initWithLogAnalyser:(ELLSqlPowerLogAnalyser *)logAnalyser startDate:(NSDate *)startDate endDate:(NSDate *)endDate;
 - (void)load;

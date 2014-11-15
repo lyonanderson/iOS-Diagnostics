@@ -12,7 +12,6 @@
 
 
 @interface ELLEnergyBreakdownReportModel ()
-@property (nonatomic, readwrite, strong) NSArray *breakdownForProcess;
 @property (nonatomic, readwrite, copy) NSString *processName;
 @end
 
@@ -27,7 +26,7 @@
 
 - (void)load {
     [self.logAnalyser processEnergyBreakdownFromDate:self.startDate toDate:self.endDate processName:self.processName completion:^(NSArray *breakdownForProcess, NSError *error) {
-        self.breakdownForProcess = breakdownForProcess;
+        self.results = breakdownForProcess;
         self.readyToReport = YES;
     }];
 }

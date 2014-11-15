@@ -14,6 +14,8 @@
 @property (nonatomic, readwrite, strong) NSDate *startDate;
 @property (nonatomic, readwrite, strong) NSDate *endDate;
 @property (nonatomic, readwrite, assign) BOOL readyToReport;
+@property (nonatomic, readwrite, strong) NSArray *results;
+@property (nonatomic, readwrite, strong) NSArray *filteredResults;
 @end
 
 @implementation ELLReportSectionModel

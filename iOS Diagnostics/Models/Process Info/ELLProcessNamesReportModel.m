@@ -11,15 +11,14 @@
 #import "ELLSqlPowerLogAnalyser.h"
 
 @interface ELLProcessNamesReportModel ()
-@property (nonatomic, readwrite, strong) NSArray *processNames;
-@property (nonatomic, readwrite, strong) NSArray *filteredProcessNames;
+
 @end
 
 @implementation ELLProcessNamesReportModel
 
 - (void)load {
     [self.logAnalyser processNamesFrom:self.startDate toDate:self.endDate completion:^(NSArray *processNames, NSError *error) {
-        self.processNames = processNames;
+        self.results = processNames;
         self.readyToReport = YES;
     }];
 }
@@ -27,25 +26,22 @@
 - (void)filterResults:(NSString *)filterTerm {
     self.readyToReport = NO;
     dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
-        NSMutableArray *filteredProcessNames = [NSMutableArray array];
+        NSMutableArray *filteredResults = [NSMutableArray array];
         
-        [self.processNames enumerateObjectsUsingBlock:^(NSString *processName, NSUInteger idx, BOOL *stop) {
+        [self.results enumerateObjectsUsingBlock:^(NSString *processName, NSUInteger idx, BOOL *stop) {
             if ([processName rangeOfString:filterTerm].location != NSNotFound) {
-                [filteredProcessNames addObject:processName];
+                [filteredResults addObject:processName];
             }
         }];
         
         dispatch_async(dispatch_get_main_queue(), ^{
-            self.filteredProcessNames = filteredProcessNames;
+            self.filteredResults = filteredResults;
             self.readyToReport = YES;
         });
         
     });
 }
 
-- (void)clearFilter {
-    
-}
 
 
 @end

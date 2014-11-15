@@ -15,11 +15,6 @@
 
 @implementation ELLTotalEnergyReportViewModel
 
--(NSInteger)numberOfItemsInSection:(NSInteger)section {
-    ELLTotalEnergyReportModel *totalEnergyModel = (ELLTotalEnergyReportModel *)self.model;
-    return totalEnergyModel.totalEnergyPerProcess.count;
-}
-
 -(NSString *)titleAtIndexPath:(NSIndexPath *)indexPath {
     return [self totalEnergyForProcessAtIndexPath:indexPath].processName;
 }
@@ -49,8 +44,7 @@
 #pragma mark Util
 
 - (ELLTotalEnergyForProcess *)totalEnergyForProcessAtIndexPath:(NSIndexPath *)indexPath {
-    ELLTotalEnergyReportModel *totalEnergyModel = (ELLTotalEnergyReportModel *)self.model;
-    return totalEnergyModel.totalEnergyPerProcess[indexPath.row];
+    return self.results[indexPath.row];
 }
 
 

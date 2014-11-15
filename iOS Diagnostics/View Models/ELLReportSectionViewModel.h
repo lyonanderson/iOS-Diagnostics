@@ -16,6 +16,7 @@
 @property (nonatomic, readonly, strong) ELLReportSectionModel *model;
 @property (nonatomic, readonly, assign) BOOL readyToReport;
 @property (nonatomic, readonly, assign) BOOL isFilteringResults;
+@property (nonatomic, readonly, strong) NSArray *results;
 @property (nonatomic, readonly, copy) NSString *reportTitle;
 @property (nonatomic, readonly, strong) id<JBLineChartViewDataSource, JBLineChartViewDelegate> chartDataSource;
 

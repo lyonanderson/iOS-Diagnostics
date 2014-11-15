@@ -10,6 +10,4 @@
 
 @interface ELLTotalEnergyReportModel : ELLReportSectionModel
 
-@property (nonatomic, readonly, strong) NSArray *totalEnergyPerProcess;
-
 @end

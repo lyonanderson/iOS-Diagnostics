@@ -11,8 +11,6 @@
 #import "ELLSqlPowerLogAnalyser.h"
 
 @interface ELLNotificationReportModel ()
-@property (nonatomic, readwrite, strong) NSArray *notificationCountsForTopics;
-
 @end
 
 @implementation ELLNotificationReportModel
@@ -20,7 +18,7 @@
 - (void)load {
     [self.logAnalyser processNotificationsFrom:self.startDate toDate:self.endDate completion:^(NSArray *notifications, NSError *error) {
         if (!error) {
-            self.notificationCountsForTopics = notifications;
+            self.results = notifications;
             self.readyToReport = YES;
         }
        

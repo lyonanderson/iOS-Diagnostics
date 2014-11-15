@@ -25,10 +25,6 @@
     return self;
 }
 
--(NSInteger)numberOfItemsInSection:(NSInteger)section {
-    ELLLocationUsageReport *usageReportModel = (ELLLocationUsageReport *)self.model;
-    return usageReportModel.locationUsesForBundle.count;
-}
 
 -(NSString *)titleAtIndexPath:(NSIndexPath *)indexPath {
     ELLLocationUsage *locationUsage = [self locationUsageForIndexPath:indexPath];
@@ -45,8 +41,7 @@
 #pragma mark Util
 
 - (ELLLocationUsage *)locationUsageForIndexPath:(NSIndexPath *)indexPath {
-    ELLLocationUsageReport *usageReportModel = (ELLLocationUsageReport *)self.model;
-    return usageReportModel.locationUsesForBundle[indexPath.row];
+    return self.results[indexPath.row];
 }
 
 

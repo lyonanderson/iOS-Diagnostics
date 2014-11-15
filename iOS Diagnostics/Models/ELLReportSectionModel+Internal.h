@@ -9,4 +9,6 @@
 
 @interface ELLReportSectionModel()
 - (void)setReadyToReport:(BOOL)readyToReport;
+- (void)setResults:(NSArray *)results;
+- (void)setFilteredResults:(NSArray *)results;
 @end

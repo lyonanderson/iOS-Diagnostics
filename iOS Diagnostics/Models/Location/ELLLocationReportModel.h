@@ -10,7 +10,4 @@
 #import "ELLReportSectionModel.h"
 
 @interface ELLLocationReportModel : ELLReportSectionModel
-
-@property (nonatomic, readonly, strong) NSArray *locationClientUses;
-
 @end

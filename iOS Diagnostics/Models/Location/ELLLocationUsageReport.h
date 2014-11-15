@@ -10,7 +10,6 @@
 
 @interface ELLLocationUsageReport : ELLReportSectionModel
 
-@property (nonatomic, readonly, strong) NSArray *locationUsesForBundle;
 @property (nonatomic, readonly, strong) NSString *bundle;
 
 - (instancetype)initWithLogAnalyser:(ELLSqlPowerLogAnalyser *)logAnalyser startDate:(NSDate *)startDate endDate:(NSDate *)endDate bundle:(NSString *)bundle;

@@ -13,10 +13,6 @@
 
 @implementation ELLEnergyBreakdownReportViewModel
 
--(NSInteger)numberOfItemsInSection:(NSInteger)section {
-    ELLEnergyBreakdownReportModel *energyBreakdown = (ELLEnergyBreakdownReportModel *)self.model;
-    return energyBreakdown.breakdownForProcess.count;
-}
 
 -(NSString *)titleAtIndexPath:(NSIndexPath *)indexPath {
     return [self energyBreakdownForIndexPath:indexPath].energyKind;
@@ -30,8 +26,7 @@
 #pragma mark Util
 
 - (ELLEnergyBreakdown *)energyBreakdownForIndexPath:(NSIndexPath *)indexPath {
-    ELLEnergyBreakdownReportModel *breakdownReport = (ELLEnergyBreakdownReportModel *)self.model;
-    return breakdownReport.breakdownForProcess[indexPath.row];
+    return self.results[indexPath.row];
 }
 
 @end
