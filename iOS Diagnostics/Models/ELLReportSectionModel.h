@@ -20,4 +20,7 @@
 - (instancetype)initWithLogAnalyser:(ELLSqlPowerLogAnalyser *)logAnalyser startDate:(NSDate *)startDate endDate:(NSDate *)endDate;
 - (void)load;
 
+- (void)filterResults:(NSString *)filterTerm;
+- (void)clearFilter;
+
 @end

@@ -29,7 +29,12 @@
 }
 
 -(void)load {
-    @throw [NSError errorWithDomain:@"com.electriclabs.PowerLog" code:404 userInfo:nil];
+}
+
+- (void)filterResults:(NSString *)filterTerm {
+}
+
+- (void)clearFilter {
 }
 
 - (void)setReadyToReport:(BOOL)readyToReport {

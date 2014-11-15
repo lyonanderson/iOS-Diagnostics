@@ -11,5 +11,6 @@
 @interface ELLProcessNamesReportModel : ELLReportSectionModel
 
 @property (nonatomic, readonly, strong) NSArray *processNames;
+@property (nonatomic, readonly, strong) NSArray *filteredProcessNames;
 
 @end

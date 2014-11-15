@@ -12,6 +12,7 @@
 
 @interface ELLProcessNamesReportModel ()
 @property (nonatomic, readwrite, strong) NSArray *processNames;
+@property (nonatomic, readwrite, strong) NSArray *filteredProcessNames;
 @end
 
 @implementation ELLProcessNamesReportModel
@@ -22,5 +23,29 @@
         self.readyToReport = YES;
     }];
 }
+
+- (void)filterResults:(NSString *)filterTerm {
+    self.readyToReport = NO;
+    dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
+        NSMutableArray *filteredProcessNames = [NSMutableArray array];
+        
+        [self.processNames enumerateObjectsUsingBlock:^(NSString *processName, NSUInteger idx, BOOL *stop) {
+            if ([processName rangeOfString:filterTerm].location != NSNotFound) {
+                [filteredProcessNames addObject:processName];
+            }
+        }];
+        
+        dispatch_async(dispatch_get_main_queue(), ^{
+            self.filteredProcessNames = filteredProcessNames;
+            self.readyToReport = YES;
+        });
+        
+    });
+}
+
+- (void)clearFilter {
+    
+}
+
 
 @end

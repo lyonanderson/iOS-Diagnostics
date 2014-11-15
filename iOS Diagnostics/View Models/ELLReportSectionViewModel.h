@@ -15,18 +15,22 @@
 
 @property (nonatomic, readonly, strong) ELLReportSectionModel *model;
 @property (nonatomic, readonly, assign) BOOL readyToReport;
+@property (nonatomic, readonly, assign) BOOL isFilteringResults;
 @property (nonatomic, readonly, copy) NSString *reportTitle;
 @property (nonatomic, readonly, strong) id<JBLineChartViewDataSource, JBLineChartViewDelegate> chartDataSource;
 
 - (instancetype)initWithModel:(ELLReportSectionModel *)model reportTitle:(NSString *)reportTitle;
 - (void)load;
 
--(void)generateChartDataSource;
--(NSInteger)numberOfItemsInSection:(NSInteger)section;
--(NSString *)titleAtIndexPath:(NSIndexPath *)indexPath;
--(NSString *)detailAtIndexPath:(NSIndexPath *)indexPath;
--(BOOL)hasDetailForIndexPath:(NSIndexPath *)indexPath;
--(ELLReportSectionViewModel *)viewModelForDetailAtIndexPath:(NSIndexPath *)indexPath;
+- (void)generateChartDataSource;
+- (NSInteger)numberOfItemsInSection:(NSInteger)section;
+- (NSString *)titleAtIndexPath:(NSIndexPath *)indexPath;
+- (NSString *)detailAtIndexPath:(NSIndexPath *)indexPath;
+- (BOOL)hasDetailForIndexPath:(NSIndexPath *)indexPath;
+- (ELLReportSectionViewModel *)viewModelForDetailAtIndexPath:(NSIndexPath *)indexPath;
 
+- (BOOL)canFilterResults;
+- (void)filterResults:(NSString *)filterTerm;
+- (void)cancelFilter;
 
 @end

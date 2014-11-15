@@ -14,6 +14,7 @@
 @interface ELLReportSectionViewModel ()
 @property (nonatomic, readwrite, strong) ELLReportSectionModel *model;
 @property (nonatomic, readwrite, assign) BOOL readyToReport;
+@property (nonatomic, readwrite, assign) BOOL isFilteringResults;
 @property (nonatomic, readwrite, copy) NSString *reportTitle;
 @property (nonatomic, readwrite, strong) id<JBLineChartViewDataSource, JBLineChartViewDelegate> chartDataSource;
 
@@ -74,5 +75,24 @@
     return nil;
 }
 
+- (BOOL)canFilterResults {
+    return NO;
+}
+
+- (void)filterResults:(NSString *)filterTerm {
+    if (filterTerm.length > 0) {
+        self.isFilteringResults = YES;
+        [self.model filterResults:filterTerm];
+    } else {
+        self.isFilteringResults = NO;
+        [self cancelFilter];
+    }
+   
+}
+
+- (void)cancelFilter {
+    self.isFilteringResults = NO;
+    self.readyToReport = YES;
+}
 
 @end

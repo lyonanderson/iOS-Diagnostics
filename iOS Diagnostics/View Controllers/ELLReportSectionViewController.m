@@ -12,11 +12,12 @@
 #import <KVOController/FBKVOController.h>
 
 
-@interface ELLReportSectionViewController ()
+@interface ELLReportSectionViewController ()<UISearchBarDelegate>
 @property (nonatomic, strong) FBKVOController *KVOController;
 @property (nonatomic, readwrite, strong) IBOutlet UITableView *tableView;
 @property (nonatomic, readwrite, strong) IBOutlet UIView *noReportView;
 @property (nonatomic, readwrite, strong) IBOutlet UIView *loadingView;
+@property (nonatomic, strong) UISearchBar *searchBar;
 
 @property (nonatomic, strong) JBLineChartView *headerChart;
 @end
@@ -28,6 +29,14 @@
     [self viewModelStateChanged];
     [self.viewModel load];
 }
+
+- (void)viewDidLoad {
+    [super viewDidLoad];
+    if (self.viewModel.canFilterResults) {
+        [self setupForFilterableResult];
+    }
+}
+
 
 #pragma mark UITableView
 
@@ -107,6 +116,25 @@
     return NO;
 }
 
+
+#pragma mark Search Setup
+
+- (void) setupForFilterableResult {
+    self.searchBar = [[UISearchBar alloc] initWithFrame:CGRectMake(0.0f, 0.0f, CGRectGetWidth(self.view.frame), 44.0f)];
+    self.searchBar.searchBarStyle = UISearchBarStyleMinimal;
+    self.searchBar.delegate = self;
+    self.tableView.tableHeaderView = self.searchBar;
+}
+
+#pragma mark - UISearchBarDelegate
+
+- (void)searchBar:(UISearchBar *)searchBar textDidChange:(NSString *)searchText {
+     [self.viewModel filterResults:[self.searchBar text]];
+}
+
+- (void)searchBarCancelButtonClicked:(UISearchBar *)searchBar {
+    [self.viewModel cancelFilter];
+}
 
 #pragma mark Setup View Model
 

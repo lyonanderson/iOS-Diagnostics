@@ -15,14 +15,11 @@
 @implementation ELLProcessNamesReportViewModel
 
 -(NSInteger)numberOfItemsInSection:(NSInteger)section {
-    ELLProcessNamesReportModel *processNamesModel = (ELLProcessNamesReportModel *)self.model;
-    return processNamesModel.processNames.count;
+    return [self processNames].count;
 }
 
 -(NSString *)titleAtIndexPath:(NSIndexPath *)indexPath {
-    ELLProcessNamesReportModel *processNamesModel = (ELLProcessNamesReportModel *)self.model;
-    return processNamesModel.processNames[indexPath.row];
-   
+    return [self processNames][indexPath.row];
 }
 
 -(NSString *)detailAtIndexPath:(NSIndexPath *)indexPath {
@@ -33,9 +30,17 @@
     return YES;
 }
 
-- (ELLReportSectionViewModel *)viewModelForDetailAtIndexPath:(NSIndexPath *)indexPath {
+- (NSArray *)processNames {
     ELLProcessNamesReportModel *processNamesModel = (ELLProcessNamesReportModel *)self.model;
-    NSString *processNameAtIndexPath = processNamesModel.processNames[indexPath.row];
+    if (self.isFilteringResults){
+        return  processNamesModel.filteredProcessNames;
+    } else {
+        return  processNamesModel.processNames;
+    }
+}
+
+- (ELLReportSectionViewModel *)viewModelForDetailAtIndexPath:(NSIndexPath *)indexPath {   
+    NSString *processNameAtIndexPath = [self processNames][indexPath.row];
     
     ELLProcessEventsReportModel *model = [[ELLProcessEventsReportModel alloc] initWithLogAnalyser:self.model.logAnalyser
                                                                                             startDate:self.model.startDate
@@ -47,5 +52,14 @@
     
     return viewModel;
 }
+
+#pragma mark Filtering
+
+- (BOOL)canFilterResults {
+    return YES;
+}
+
+
+
 
 @end
