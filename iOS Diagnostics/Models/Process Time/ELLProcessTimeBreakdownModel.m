@@ -9,6 +9,7 @@
 #import "ELLProcessTimeBreakdownModel.h"
 #import "ELLReportSectionModel+Internal.h"
 #import "ELLSqlPowerLogAnalyser.h"
+#import "ELLProcessTime.h"
 
 
 @interface ELLProcessTimeBreakdownModel ()
@@ -21,6 +22,25 @@
         self.results = processTimeBreakdown;
         self.readyToReport = YES;
     }];
+}
+
+- (void)filterResults:(NSString *)filterTerm {
+    self.readyToReport = NO;
+    dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
+        NSMutableArray *filteredResults = [NSMutableArray array];
+        
+        [self.results enumerateObjectsUsingBlock:^(ELLProcessTime *processTime, NSUInteger idx, BOOL *stop) {
+            if ([processTime.processName rangeOfString:filterTerm options:NSCaseInsensitiveSearch | NSDiacriticInsensitiveSearch].location != NSNotFound) {
+                [filteredResults addObject:processTime];
+            }
+        }];
+        
+        dispatch_async(dispatch_get_main_queue(), ^{
+            self.filteredResults = filteredResults;
+            self.readyToReport = YES;
+        });
+        
+    });
 }
 
 @end

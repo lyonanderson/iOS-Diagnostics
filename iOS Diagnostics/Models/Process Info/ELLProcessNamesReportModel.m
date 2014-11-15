@@ -29,7 +29,7 @@
         NSMutableArray *filteredResults = [NSMutableArray array];
         
         [self.results enumerateObjectsUsingBlock:^(NSString *processName, NSUInteger idx, BOOL *stop) {
-            if ([processName rangeOfString:filterTerm].location != NSNotFound) {
+            if ([processName rangeOfString:filterTerm options:NSCaseInsensitiveSearch | NSDiacriticInsensitiveSearch].location != NSNotFound) {
                 [filteredResults addObject:processName];
             }
         }];

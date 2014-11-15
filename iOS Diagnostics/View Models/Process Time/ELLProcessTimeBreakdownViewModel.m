@@ -35,6 +35,10 @@
     return [_dateComponentsFormatter stringFromTimeInterval:[self processTimeForIndexPath:indexPath].processTime];
 }
 
+-(BOOL)canFilterResults {
+    return YES;
+}
+
 #pragma mark Util
 
 - (ELLProcessTime *)processTimeForIndexPath:(NSIndexPath *)indexPath {

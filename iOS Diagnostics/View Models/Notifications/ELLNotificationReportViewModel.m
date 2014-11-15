@@ -40,6 +40,10 @@
     return YES;
 }
 
+- (BOOL)canFilterResults {
+    return YES;
+}
+
 #pragma mark Util
 
 - (ELLNotificationCount *)notificationCountForIndexPath:(NSIndexPath *)indexPath {

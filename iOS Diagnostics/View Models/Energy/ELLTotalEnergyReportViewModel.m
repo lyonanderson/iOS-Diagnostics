@@ -40,6 +40,10 @@
     return viewModel;
 }
 
+- (BOOL)canFilterResults {
+    return YES;
+}
+
 
 #pragma mark Util
 
