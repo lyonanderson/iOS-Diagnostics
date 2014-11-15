@@ -20,7 +20,7 @@
 }
 
 -(NSString *)detailAtIndexPath:(NSIndexPath *)indexPath {
-    return [NSString stringWithFormat:@"%.2f", [self totalEnergyForProcessAtIndexPath:indexPath].totalEnergy];
+    return [NSString stringWithFormat:@"%.2f μW", [self totalEnergyForProcessAtIndexPath:indexPath].totalEnergy];
 }
 
 - (BOOL)hasDetailForIndexPath:(NSIndexPath *)indexPath {

@@ -19,7 +19,7 @@
 }
 
 -(NSString *)detailAtIndexPath:(NSIndexPath *)indexPath {
-    return [NSString stringWithFormat:@"%.2f", [self energyBreakdownForIndexPath:indexPath].energy];
+    return [NSString stringWithFormat:@"%.2f μW", [self energyBreakdownForIndexPath:indexPath].energy];
 }
 
 
