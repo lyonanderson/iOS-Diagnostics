@@ -57,9 +57,6 @@ static const NSUInteger kELLMaxNumberOfRetries = 1;
         self.mbsDevice = [[MBSDevice alloc] init];;
         
         if (self.mbsDevice) {
-            
-            [self.mbsDevice collectLogs:0];
-            [self.mbsDevice collectLogs:3];
             [self.mbsDevice copyPowerLogsToDir:[self _logPath]];
             
             NSFileManager *fileManager = [[NSFileManager alloc] init];
