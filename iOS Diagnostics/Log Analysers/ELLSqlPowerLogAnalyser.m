@@ -389,7 +389,7 @@
 
 - (void)inferLoggingPeriodWithCompletion:(void(^)(NSDate *startDate, NSDate *endDate, NSError *error))completion {
     dispatch_async(self.loadingQueue, ^{
-        FMResultSet *results = [self.logfileDatabase executeQuery:@"SELECT min(timestamp) as first, max(timestamp) as last FROM PLPowerAssertionAgent_EventInterval_Assertion"];
+        FMResultSet *results = [self.logfileDatabase executeQuery:@"SELECT min(timestamp) as first, max(timestamp) as last FROM PLBatteryAgent_EventBackward_Battery"];
         NSDate *firstDate, *lastDate;
         if ([results next]) {
             firstDate = [NSDate dateWithTimeIntervalSince1970:[results longLongIntForColumn:@"first"]];
