@@ -357,6 +357,30 @@
     });
 }
 
+/*
+ 
+ SELECT timestamp, ApplicationName, Operation FROM PLAudioAgent_EventPoint_AudioApp
+ WHERE ApplicationName NOT NULL*/
+
+- (void)processApplicationsUsingAudioFrom:(NSDate *)fromDate toDate:(NSDate *)toDate completion:(void(^)(NSArray *applicationNames, NSError *error))completion {
+    dispatch_async(self.loadingQueue, ^{
+        FMResultSet *results = [self.logfileDatabase executeQueryWithFormat:@"SELECT ApplicationName FROM "\
+                                "PLAudioAgent_EventPoint_AudioApp "\
+                                "WHERE ApplicationName NOT NULL "\
+                                "AND timestamp > %f AND timestamp < %f "\
+                                "GROUP BY ApplicationName",
+                                fromDate.timeIntervalSince1970, toDate.timeIntervalSince1970];
+        
+        NSMutableArray *applicationNames = [NSMutableArray array];
+        
+        while ([results next]) {
+            [applicationNames addObject:[results stringForColumn:@"ApplicationName"]];
+        }
+        dispatch_async(dispatch_get_main_queue(), ^{
+            completion(applicationNames, nil);
+        });
+    });
+}
 
 - (void)inferAudioOnTimeFrom:(NSDate *)fromDate toDate:(NSDate *)toDate WithCompletion:(void (^)(NSTimeInterval, NSError *))completion {
     dispatch_async(self.loadingQueue, ^{

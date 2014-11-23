@@ -19,7 +19,8 @@ typedef NS_ENUM(NSUInteger, ELLPowerReportSection) {
     ELLPowerReportProcessTime,
     ELLPowerReportEnergyPerProcess,
     ELLPowerReportSignal,
-    ELLPowerReportProcessInfo
+    ELLPowerReportProcessInfo,
+    ELLPowerReportAudio
 };
 
 @interface ELLPowerLogReportViewModel : NSObject

@@ -47,6 +47,8 @@
 		AD646E661A0E1555004B3AC9 /* ELLPowerLogReportViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = AD646E651A0E1555004B3AC9 /* ELLPowerLogReportViewModel.m */; };
 		AD661DEF1A14AD4300A68496 /* ELLNotificationCount.m in Sources */ = {isa = PBXBuildFile; fileRef = AD661DEC1A14AD4300A68496 /* ELLNotificationCount.m */; };
 		AD661DF01A14AD4300A68496 /* ELLNotificationReportModel.m in Sources */ = {isa = PBXBuildFile; fileRef = AD661DEE1A14AD4300A68496 /* ELLNotificationReportModel.m */; };
+		AD8D91461A227E33006FD860 /* ELLApplicationsUsingAudioReportModel.m in Sources */ = {isa = PBXBuildFile; fileRef = AD8D91451A227E33006FD860 /* ELLApplicationsUsingAudioReportModel.m */; };
+		AD8D91491A227E49006FD860 /* ELLApplicationsUsingAudioReportViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = AD8D91481A227E49006FD860 /* ELLApplicationsUsingAudioReportViewModel.m */; };
 		AD90322D1A0EC79D00DBE128 /* ELLLocationCount.m in Sources */ = {isa = PBXBuildFile; fileRef = AD90322C1A0EC79D00DBE128 /* ELLLocationCount.m */; };
 		AD9032301A0EC8CC00DBE128 /* ELLLocationReportModel.m in Sources */ = {isa = PBXBuildFile; fileRef = AD90322F1A0EC8CC00DBE128 /* ELLLocationReportModel.m */; };
 		AD9032331A0ECB8B00DBE128 /* ELLLocationReportViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = AD9032321A0ECB8B00DBE128 /* ELLLocationReportViewModel.m */; };
@@ -150,6 +152,10 @@
 		AD661DEC1A14AD4300A68496 /* ELLNotificationCount.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ELLNotificationCount.m; sourceTree = "<group>"; };
 		AD661DED1A14AD4300A68496 /* ELLNotificationReportModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ELLNotificationReportModel.h; sourceTree = "<group>"; };
 		AD661DEE1A14AD4300A68496 /* ELLNotificationReportModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ELLNotificationReportModel.m; sourceTree = "<group>"; };
+		AD8D91441A227E33006FD860 /* ELLApplicationsUsingAudioReportModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ELLApplicationsUsingAudioReportModel.h; sourceTree = "<group>"; };
+		AD8D91451A227E33006FD860 /* ELLApplicationsUsingAudioReportModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ELLApplicationsUsingAudioReportModel.m; sourceTree = "<group>"; };
+		AD8D91471A227E49006FD860 /* ELLApplicationsUsingAudioReportViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ELLApplicationsUsingAudioReportViewModel.h; sourceTree = "<group>"; };
+		AD8D91481A227E49006FD860 /* ELLApplicationsUsingAudioReportViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ELLApplicationsUsingAudioReportViewModel.m; sourceTree = "<group>"; };
 		AD90322B1A0EC79D00DBE128 /* ELLLocationCount.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ELLLocationCount.h; sourceTree = "<group>"; };
 		AD90322C1A0EC79D00DBE128 /* ELLLocationCount.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ELLLocationCount.m; sourceTree = "<group>"; };
 		AD90322E1A0EC8CC00DBE128 /* ELLLocationReportModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ELLLocationReportModel.h; sourceTree = "<group>"; };
@@ -448,6 +454,7 @@
 		AD646E5F1A0D8B75004B3AC9 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				AD8D91421A227523006FD860 /* Audio */,
 				AD337B2C1A16B9FD009BA85D /* Process Info */,
 				AD030E821A13D36800AEA400 /* Overall */,
 				ADAB26331A121B800000D20B /* Signal */,
@@ -467,6 +474,7 @@
 		AD646E631A0E0CC0004B3AC9 /* View Models */ = {
 			isa = PBXGroup;
 			children = (
+				AD8D91431A227540006FD860 /* Audio */,
 				AD337B301A16BACA009BA85D /* Process Info */,
 				AD030E831A13D3BB00AEA400 /* Overall */,
 				ADAB26341A121B980000D20B /* Signal */,
@@ -501,6 +509,24 @@
 				AD1269F71A0FF089003A823A /* ELLProcessTimeBreakdownViewModel.m */,
 			);
 			path = "Process Time";
+			sourceTree = "<group>";
+		};
+		AD8D91421A227523006FD860 /* Audio */ = {
+			isa = PBXGroup;
+			children = (
+				AD8D91441A227E33006FD860 /* ELLApplicationsUsingAudioReportModel.h */,
+				AD8D91451A227E33006FD860 /* ELLApplicationsUsingAudioReportModel.m */,
+			);
+			path = Audio;
+			sourceTree = "<group>";
+		};
+		AD8D91431A227540006FD860 /* Audio */ = {
+			isa = PBXGroup;
+			children = (
+				AD8D91471A227E49006FD860 /* ELLApplicationsUsingAudioReportViewModel.h */,
+				AD8D91481A227E49006FD860 /* ELLApplicationsUsingAudioReportViewModel.m */,
+			);
+			path = Audio;
 			sourceTree = "<group>";
 		};
 		ADAB26331A121B800000D20B /* Signal */ = {
@@ -682,6 +708,7 @@
 				AD3A842D1A0E667B009C17A6 /* ELLReportSectionViewModel.m in Sources */,
 				AD337B2F1A16BA55009BA85D /* ELLProcessNamesReportModel.m in Sources */,
 				ADAB26321A12178A0000D20B /* ELLLocationUsageReportViewModel.m in Sources */,
+				AD8D91491A227E49006FD860 /* ELLApplicationsUsingAudioReportViewModel.m in Sources */,
 				AD661DF01A14AD4300A68496 /* ELLNotificationReportModel.m in Sources */,
 				AD126A021A1156B5003A823A /* ELLNotificationTopicModel.m in Sources */,
 				AD661DEF1A14AD4300A68496 /* ELLNotificationCount.m in Sources */,
@@ -692,6 +719,7 @@
 				AD646E4E1A0D7062004B3AC9 /* ELLConfigViewController.m in Sources */,
 				AD90322D1A0EC79D00DBE128 /* ELLLocationCount.m in Sources */,
 				AD1269F81A0FF089003A823A /* ELLProcessTimeBreakdownViewModel.m in Sources */,
+				AD8D91461A227E33006FD860 /* ELLApplicationsUsingAudioReportModel.m in Sources */,
 				ADE9AE5C1A14B41C00D71C11 /* ELLReportSectionViewController.m in Sources */,
 				AD337B391A16BF0B009BA85D /* ELLProcessEventsReportModel.m in Sources */,
 				AD030E861A13D42300AEA400 /* ELLOverallReportModel.m in Sources */,

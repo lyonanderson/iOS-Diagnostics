@@ -23,6 +23,8 @@
 #import "ELLOverallReportViewModel.h"
 #import "ELLProcessNamesReportModel.h"
 #import "ELLProcessNamesReportViewModel.h"
+#import "ELLApplicationsUsingAudioReportModel.h"
+#import "ELLApplicationsUsingAudioReportViewModel.h"
 
 #import <KVOController/FBKVOController.h>
 
@@ -66,7 +68,7 @@
 }
 
 -(NSInteger)numberOfItemsInSection:(NSInteger)section {
-    return 7;
+    return 8;
 }
 
 -(NSString *)titleForSection:(NSInteger)section {
@@ -95,6 +97,8 @@
         }
         case ELLPowerReportProcessInfo:
             return @"Process Info";
+        case ELLPowerReportAudio:
+            return @"Audio";
         default:
             return @"";
     }
@@ -159,6 +163,12 @@
                                                                                               startDate:self.constrainedStartDate
                                                                                                 endDate:self.constrainedEndDate];
             return [[ELLProcessNamesReportViewModel alloc] initWithModel:model reportTitle:[self titleAtIndexPath:indexPath]];
+        }
+        case ELLPowerReportAudio: {
+            ELLApplicationsUsingAudioReportModel *model = [[ELLApplicationsUsingAudioReportModel alloc] initWithLogAnalyser:self.logAnalyser
+                                                                                                                  startDate:self.constrainedStartDate
+                                                                                                                    endDate:self.constrainedEndDate];
+            return [[ELLApplicationsUsingAudioReportViewModel alloc] initWithModel:model reportTitle:[self titleAtIndexPath:indexPath]];
         }
         default:
             return nil;

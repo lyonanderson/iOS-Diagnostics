@@ -23,6 +23,7 @@
 - (void)processSignalBarsFrom:(NSDate *)fromDate toDate:(NSDate *)toDate completion:(void(^)(NSArray *signalBreakdown, NSError *error))completion;
 - (void)processNamesFrom:(NSDate *)fromDate toDate:(NSDate *)toDate completion:(void(^)(NSArray *processNames, NSError *error))completion;
 - (void)processInfoFrom:(NSDate *)fromDate toDate:(NSDate *)toDate processName:(NSString *)processName completion:(void(^)(NSArray *processEvents, NSError *error))completion;
+- (void)processApplicationsUsingAudioFrom:(NSDate *)fromDate toDate:(NSDate *)toDate completion:(void(^)(NSArray *applicationNames, NSError *error))completion;
 - (void)inferOnTimeFrom:(NSDate *)fromDate toDate:(NSDate *)toDate completion:(void(^)(NSTimeInterval timeInterval, NSError *error))completion;
 - (void)inferAudioOnTimeFrom:(NSDate *)fromDate toDate:(NSDate *)toDate WithCompletion:(void (^)(NSTimeInterval, NSError *))completion;
 - (void)inferDisplayOnTimeFrom:(NSDate *)fromDate toDate:(NSDate *)toDate WithCompletion:(void(^)(NSTimeInterval timeInterval, NSError *error))completion;
