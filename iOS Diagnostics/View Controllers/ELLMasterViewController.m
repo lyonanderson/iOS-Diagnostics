@@ -46,9 +46,10 @@
     [self.viewModel reload];
 }
 
-- (IBAction)shareLogfile:(id)sender {
+- (IBAction)shareLogfile:(UIBarButtonItem *)sender {
     UIActivityViewController *controller = [[UIActivityViewController alloc] initWithActivityItems:@[[NSURL fileURLWithPath:self.viewModel.compressedLogFile]]
                                                                              applicationActivities:nil];
+    controller.popoverPresentationController.barButtonItem = sender;
     [self presentViewController:controller animated:YES completion:nil];
 }
 
