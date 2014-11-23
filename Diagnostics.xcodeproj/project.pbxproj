@@ -39,7 +39,6 @@
 		AD646E321A0D68BB004B3AC9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AD646E301A0D68BB004B3AC9 /* Main.storyboard */; };
 		AD646E341A0D68BB004B3AC9 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AD646E331A0D68BB004B3AC9 /* Images.xcassets */; };
 		AD646E371A0D68BB004B3AC9 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = AD646E351A0D68BB004B3AC9 /* LaunchScreen.xib */; };
-		AD646E431A0D68BB004B3AC9 /* iOS_DiagnosticsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = AD646E421A0D68BB004B3AC9 /* iOS_DiagnosticsTests.m */; };
 		AD646E4E1A0D7062004B3AC9 /* ELLConfigViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AD646E4D1A0D7062004B3AC9 /* ELLConfigViewController.m */; };
 		AD646E531A0D899C004B3AC9 /* ELLPowerLogDownloadService.m in Sources */ = {isa = PBXBuildFile; fileRef = AD646E521A0D899C004B3AC9 /* ELLPowerLogDownloadService.m */; };
 		AD646E581A0D89E7004B3AC9 /* GZIP.m in Sources */ = {isa = PBXBuildFile; fileRef = AD646E571A0D89E7004B3AC9 /* GZIP.m */; };
@@ -125,7 +124,7 @@
 		AD3A842E1A0E737A009C17A6 /* ELLReportSectionModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ELLReportSectionModel.h; sourceTree = "<group>"; };
 		AD3A842F1A0E737A009C17A6 /* ELLReportSectionModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ELLReportSectionModel.m; sourceTree = "<group>"; };
 		AD3A84341A0E7DC0009C17A6 /* ELLReportSectionModel+Internal.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ELLReportSectionModel+Internal.h"; sourceTree = "<group>"; };
-		AD646E201A0D68BB004B3AC9 /* iOS Diagnostics.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "iOS Diagnostics.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		AD646E201A0D68BB004B3AC9 /* Diagnostics.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Diagnostics.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AD646E241A0D68BB004B3AC9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AD646E251A0D68BB004B3AC9 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		AD646E271A0D68BB004B3AC9 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -133,9 +132,8 @@
 		AD646E311A0D68BB004B3AC9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		AD646E331A0D68BB004B3AC9 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		AD646E361A0D68BB004B3AC9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
-		AD646E3C1A0D68BB004B3AC9 /* iOS DiagnosticsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "iOS DiagnosticsTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		AD646E3C1A0D68BB004B3AC9 /* DiagnosticsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DiagnosticsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		AD646E411A0D68BB004B3AC9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		AD646E421A0D68BB004B3AC9 /* iOS_DiagnosticsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = iOS_DiagnosticsTests.m; sourceTree = "<group>"; };
 		AD646E4C1A0D7062004B3AC9 /* ELLConfigViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ELLConfigViewController.h; sourceTree = "<group>"; };
 		AD646E4D1A0D7062004B3AC9 /* ELLConfigViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ELLConfigViewController.m; sourceTree = "<group>"; };
 		AD646E511A0D899C004B3AC9 /* ELLPowerLogDownloadService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ELLPowerLogDownloadService.h; sourceTree = "<group>"; };
@@ -355,8 +353,8 @@
 		AD646E211A0D68BB004B3AC9 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				AD646E201A0D68BB004B3AC9 /* iOS Diagnostics.app */,
-				AD646E3C1A0D68BB004B3AC9 /* iOS DiagnosticsTests.xctest */,
+				AD646E201A0D68BB004B3AC9 /* Diagnostics.app */,
+				AD646E3C1A0D68BB004B3AC9 /* DiagnosticsTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -393,7 +391,6 @@
 		AD646E3F1A0D68BB004B3AC9 /* iOS DiagnosticsTests */ = {
 			isa = PBXGroup;
 			children = (
-				AD646E421A0D68BB004B3AC9 /* iOS_DiagnosticsTests.m */,
 				AD646E401A0D68BB004B3AC9 /* Supporting Files */,
 			);
 			path = "iOS DiagnosticsTests";
@@ -527,9 +524,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		AD646E1F1A0D68BB004B3AC9 /* iOS Diagnostics */ = {
+		AD646E1F1A0D68BB004B3AC9 /* Diagnostics */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = AD646E461A0D68BB004B3AC9 /* Build configuration list for PBXNativeTarget "iOS Diagnostics" */;
+			buildConfigurationList = AD646E461A0D68BB004B3AC9 /* Build configuration list for PBXNativeTarget "Diagnostics" */;
 			buildPhases = (
 				F24DC00562CB4F6E63DD7246 /* Check Pods Manifest.lock */,
 				AD646E1C1A0D68BB004B3AC9 /* Sources */,
@@ -541,14 +538,14 @@
 			);
 			dependencies = (
 			);
-			name = "iOS Diagnostics";
+			name = Diagnostics;
 			productName = "iOS Diagnostics";
-			productReference = AD646E201A0D68BB004B3AC9 /* iOS Diagnostics.app */;
+			productReference = AD646E201A0D68BB004B3AC9 /* Diagnostics.app */;
 			productType = "com.apple.product-type.application";
 		};
-		AD646E3B1A0D68BB004B3AC9 /* iOS DiagnosticsTests */ = {
+		AD646E3B1A0D68BB004B3AC9 /* DiagnosticsTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = AD646E491A0D68BB004B3AC9 /* Build configuration list for PBXNativeTarget "iOS DiagnosticsTests" */;
+			buildConfigurationList = AD646E491A0D68BB004B3AC9 /* Build configuration list for PBXNativeTarget "DiagnosticsTests" */;
 			buildPhases = (
 				AD646E381A0D68BB004B3AC9 /* Sources */,
 				AD646E391A0D68BB004B3AC9 /* Frameworks */,
@@ -559,9 +556,9 @@
 			dependencies = (
 				AD646E3E1A0D68BB004B3AC9 /* PBXTargetDependency */,
 			);
-			name = "iOS DiagnosticsTests";
+			name = DiagnosticsTests;
 			productName = "iOS DiagnosticsTests";
-			productReference = AD646E3C1A0D68BB004B3AC9 /* iOS DiagnosticsTests.xctest */;
+			productReference = AD646E3C1A0D68BB004B3AC9 /* DiagnosticsTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -583,7 +580,7 @@
 					};
 				};
 			};
-			buildConfigurationList = AD646E1B1A0D68BB004B3AC9 /* Build configuration list for PBXProject "iOS Diagnostics" */;
+			buildConfigurationList = AD646E1B1A0D68BB004B3AC9 /* Build configuration list for PBXProject "Diagnostics" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -596,8 +593,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				AD646E1F1A0D68BB004B3AC9 /* iOS Diagnostics */,
-				AD646E3B1A0D68BB004B3AC9 /* iOS DiagnosticsTests */,
+				AD646E1F1A0D68BB004B3AC9 /* Diagnostics */,
+				AD646E3B1A0D68BB004B3AC9 /* DiagnosticsTests */,
 			);
 		};
 /* End PBXProject section */
@@ -711,7 +708,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AD646E431A0D68BB004B3AC9 /* iOS_DiagnosticsTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -720,7 +716,7 @@
 /* Begin PBXTargetDependency section */
 		AD646E3E1A0D68BB004B3AC9 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = AD646E1F1A0D68BB004B3AC9 /* iOS Diagnostics */;
+			target = AD646E1F1A0D68BB004B3AC9 /* Diagnostics */;
 			targetProxy = AD646E3D1A0D68BB004B3AC9 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -832,7 +828,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = "iOS Diagnostics/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = Diagnostics;
 				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
@@ -846,7 +842,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = "iOS Diagnostics/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = Diagnostics;
 				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
@@ -865,7 +861,7 @@
 				);
 				INFOPLIST_FILE = "iOS DiagnosticsTests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = DiagnosticsTests;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/iOS Diagnostics.app/iOS Diagnostics";
 			};
 			name = Debug;
@@ -880,7 +876,7 @@
 				);
 				INFOPLIST_FILE = "iOS DiagnosticsTests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = DiagnosticsTests;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/iOS Diagnostics.app/iOS Diagnostics";
 			};
 			name = Release;
@@ -888,7 +884,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		AD646E1B1A0D68BB004B3AC9 /* Build configuration list for PBXProject "iOS Diagnostics" */ = {
+		AD646E1B1A0D68BB004B3AC9 /* Build configuration list for PBXProject "Diagnostics" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				AD646E441A0D68BB004B3AC9 /* Debug */,
@@ -897,7 +893,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		AD646E461A0D68BB004B3AC9 /* Build configuration list for PBXNativeTarget "iOS Diagnostics" */ = {
+		AD646E461A0D68BB004B3AC9 /* Build configuration list for PBXNativeTarget "Diagnostics" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				AD646E471A0D68BB004B3AC9 /* Debug */,
@@ -906,7 +902,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		AD646E491A0D68BB004B3AC9 /* Build configuration list for PBXNativeTarget "iOS DiagnosticsTests" */ = {
+		AD646E491A0D68BB004B3AC9 /* Build configuration list for PBXNativeTarget "DiagnosticsTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				AD646E4A1A0D68BB004B3AC9 /* Debug */,

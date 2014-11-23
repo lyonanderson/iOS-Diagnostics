@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14B23" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="H1p-Uh-vWS">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="H1p-Uh-vWS">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6246"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
@@ -20,7 +20,7 @@
             </objects>
             <point key="canvasLocation" x="-38" y="-630"/>
         </scene>
-        <!--iOS Diagnostics-->
+        <!--Diagnostics-->
         <scene sceneID="8e6-GC-wi0">
             <objects>
                 <viewController id="Qag-hR-Kup" customClass="ELLMasterViewController" sceneMemberID="viewController">
@@ -116,7 +116,7 @@
                             <constraint firstItem="QrZ-5c-geW" firstAttribute="top" secondItem="eyv-mO-Ilt" secondAttribute="bottom" id="vXd-rX-wfB"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="iOS Diagnostics" id="5Ml-N0-7gO">
+                    <navigationItem key="navigationItem" title="Diagnostics" id="5Ml-N0-7gO">
                         <barButtonItem key="leftBarButtonItem" title="Config" id="wOa-kH-64X">
                             <connections>
                                 <segue destination="36M-Fa-sU0" kind="presentation" identifier="showConfig" id="V5B-ng-JHF"/>
