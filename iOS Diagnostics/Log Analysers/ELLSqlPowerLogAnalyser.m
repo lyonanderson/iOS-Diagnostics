@@ -358,6 +358,38 @@
 }
 
 
+- (void)inferAudioOnTimeFrom:(NSDate *)fromDate toDate:(NSDate *)toDate WithCompletion:(void (^)(NSTimeInterval, NSError *))completion {
+    dispatch_async(self.loadingQueue, ^{
+        FMResultSet *results = [self.logfileDatabase executeQueryWithFormat:@"SELECT timestamp, Operation "\
+                                "FROM PLAudioAgent_EventPoint_AudioApp "\
+                                "WHERE ApplicationName NOT NULL "\
+                                "AND timestamp > %f AND timestamp < %f "\
+                                "ORDER BY timestamp", fromDate.timeIntervalSince1970, toDate.timeIntervalSince1970];
+        NSTimeInterval accumulator = 0;
+        NSTimeInterval lastOn = 0;
+        while ([results next]) {
+            NSTimeInterval currentTime = [results doubleForColumn:@"timestamp"];
+            NSString *operation = [results stringForColumn:@"Operation"];
+            
+            if ([operation isEqualToString:@"AudioPlayback_Stop"]) {
+                if (lastOn != 0) {
+                    accumulator += (currentTime - lastOn);
+                    lastOn = 0;
+                }
+            } else if ([operation isEqualToString:@"AudioPlayback_Start"] && lastOn == 0) {
+                lastOn = currentTime;
+            }
+            
+        }
+        dispatch_async(dispatch_get_main_queue(), ^{
+            completion(accumulator, nil);
+            
+        });
+    });
+
+}
+
+
 - (void)inferDisplayOnTimeFrom:(NSDate *)fromDate toDate:(NSDate *)toDate WithCompletion:(void(^)(NSTimeInterval timeInterval, NSError *error))completion {
     dispatch_async(self.loadingQueue, ^{
         FMResultSet *results = [self.logfileDatabase executeQueryWithFormat:@"SELECT timestamp, Active "\

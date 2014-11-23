@@ -31,14 +31,16 @@
 
 
 -(NSInteger)numberOfItemsInSection:(NSInteger)section {
-    return 2;
+    return 3;
 }
 
 -(NSString *)titleAtIndexPath:(NSIndexPath *)indexPath {
     if (indexPath.row == 0) {
         return @"Total On Time";
-    } else {
+    } else if (indexPath.row == 1) {
         return @"Total Display On Time";
+    } else {
+        return @"Total Audio Time";
     }
 }
 
@@ -46,8 +48,10 @@
     ELLOverallReportModel *overallReportModel = (ELLOverallReportModel *)self.model;
     if (indexPath.row == 0) {
         return [_dateComponentsFormatter stringFromTimeInterval:overallReportModel.totalOnTime];
-    } else {
+    } else if (indexPath.row == 1) {
         return [_dateComponentsFormatter stringFromTimeInterval:overallReportModel.totalDisplayOnTime];
+    } else {
+        return [_dateComponentsFormatter stringFromTimeInterval:overallReportModel.totalAudioTime];
     }
 }
 

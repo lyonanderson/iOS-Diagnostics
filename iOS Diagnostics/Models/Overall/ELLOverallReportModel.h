@@ -12,6 +12,7 @@
 
 @property (nonatomic, readonly, assign) NSTimeInterval totalOnTime;
 @property (nonatomic, readonly, assign) NSTimeInterval totalDisplayOnTime;
+@property (nonatomic, readonly, assign) NSTimeInterval totalAudioTime;
 @property (nonatomic, readonly, strong) NSArray *batteryDates;
 @property (nonatomic, readonly, strong) NSArray *batterValues;
 

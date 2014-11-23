@@ -13,6 +13,7 @@
 @interface ELLOverallReportModel ()
 @property (nonatomic, readwrite, assign) NSTimeInterval totalOnTime;
 @property (nonatomic, readwrite, assign) NSTimeInterval totalDisplayOnTime;
+@property (nonatomic, readwrite, assign) NSTimeInterval totalAudioTime;
 @property (nonatomic, readwrite, strong) NSArray *batteryDates;
 @property (nonatomic, readwrite, strong) NSArray *batterValues;
 @end
@@ -38,6 +39,12 @@
     [self.logAnalyser processBatteryChargeFrom:self.startDate toDate:self.endDate completion:^(NSArray *times, NSArray *batteryValues, NSError *error) {
         self.batteryDates = times;
         self.batterValues = batteryValues;
+        dispatch_group_leave(group);
+    }];
+    
+    dispatch_group_enter(group);
+    [self.logAnalyser inferAudioOnTimeFrom:self.startDate toDate:self.endDate WithCompletion:^(NSTimeInterval timeInterval, NSError *error) {
+        self.totalAudioTime = timeInterval;
         dispatch_group_leave(group);
     }];
     
