@@ -78,7 +78,7 @@
 -(NSString *)titleAtIndexPath:(NSIndexPath *)indexPath {
     switch (indexPath.row) {
         case ELLPowerReportSectionBattery: {
-             return @"Overal Metrics";
+             return @"Overall Metrics";
         }
         case ELLPowerReportSectionNotifications: {
              return @"Notifications";
